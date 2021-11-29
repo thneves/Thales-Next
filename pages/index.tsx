@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import Navbar from "../components/Navbar";
+import BasicLayout from "../layout/Basic";
+
 
 const Title = styled.h1`
   color: aqua;
@@ -7,9 +10,10 @@ const Title = styled.h1`
 
 const Home = () => {
   return (
-    <div>
+    <BasicLayout>
+      <Navbar></Navbar>
       <Title>Hello</Title>
-    </div>
+    </BasicLayout>
   )
 };
 
