@@ -7,18 +7,16 @@ const StyledFooter = styled.footer`
   text-align: center;
   gap: 25px;
   padding: 20px 0;
-  bottom: 0;
-  background-color: pink;
-
+  background-color: #334257;
 
   a {
     transition: 0.6s;
-    font-size: 20px;
+    font-size: 25px;
     margin: 10px 0;
+    color: #eeeeee;
 
     &:hover {
-    font-size: 28px;
-    color: #fff;
+    color: #548CA8;
     }
   }
 `

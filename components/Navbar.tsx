@@ -10,6 +10,7 @@ const Header = styled.header`
     width: 100%;
     display: flex;
     justify-content: center;
+    background-color: #334257;
 `
 
 const Nav = styled.nav`
@@ -17,6 +18,7 @@ const Nav = styled.nav`
     justify-content: center;
     align-items: center;
     gap: 50px;
+    color: #eeeeee;
 `;
 
 const Navbar = () => {

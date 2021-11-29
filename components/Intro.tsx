@@ -1,26 +1,25 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { SSL_OP_SSLEAY_080_CLIENT_DH_BUG } from "constants";
 
 const HomeContainer = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
   height: 80vh;
-  background-color: pink;
+  background-color: #334257;
 `
 
 const Intro = () => {
   return (
     <HomeContainer 
-       initial={{ opacity: 0}}
+       initial={{ opacity: 0.2}}
        animate={{ opacity: 1}}
        transition={{ duration: 2}}
     >
       <motion.h2 
       initial={{ fontSize: 80}}
       animate={{
-        fontSize: 100, color: '#806565', x: 20, y: -20
+        fontSize: 100, color: '#EEEEEE', x: 20, y: -20
       }}
       transition={{ duration: 2}}
       >
