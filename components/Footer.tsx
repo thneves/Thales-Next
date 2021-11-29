@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { RiGithubLine, RiBracesFill, RiLinkedinLine} from "react-icons/ri";
 
-const StyledFooter = styled.footer`
+const StyledFooter = styled(motion.footer)`
   display: flex;
   justify-content: center;
   text-align: center;
@@ -39,7 +40,11 @@ const Footer = () => {
   ]
 
   return (
-    <StyledFooter>
+    <StyledFooter
+      initial={{ y: 50, opacity: 0.2}}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8 }}
+    >
      {links.map((link, index) => {
        return <a key={index} href={link.url} target="_blank">
          <link.icon />

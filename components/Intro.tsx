@@ -14,7 +14,7 @@ const Intro = () => {
     <HomeContainer 
        initial={{ opacity: 0.2}}
        animate={{ opacity: 1}}
-       transition={{ duration: 2}}
+       transition={{ duration: 0.8}}
     >
       <motion.h2 
       initial={{ fontSize: 80}}
