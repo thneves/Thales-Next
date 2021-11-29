@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -20,20 +21,23 @@ const Nav = styled.nav`
     align-items: center;
     gap: 10px;
     color: #eeeeee;
-
-    li {
-        transition: 0.5s;
-        padding: 8px;
-        
-        &:hover {
-            border-radius: 6px;
-            background-color: #548CA8;
-            opacity: 0.6;
-        }
-    }
 `;
 
+const StyledList = styled(motion.li)`
+    padding: 8px;
+    transition: 0.3s;
+    border-radius: 10px;
+
+    &:hover {
+        background: #476072;
+       text-shadow: 0px 0px 2px rgb(255, 255, 255);
+        box-shadow: 0px 0px 8px rgb(255, 255, 255);
+    }
+`
+
 const Navbar = () => {
+
+
   return (
       <div>
         <Header
@@ -42,18 +46,21 @@ const Navbar = () => {
             transition={{ duration: 0.8 }}
         >
         <Nav>
-            <li>
+            <StyledList
+
+            
+            >
                 <Link href="/" >Home </Link>
-            </li>
-            <li>
+            </StyledList>
+            <StyledList>
                 <Link href="/projects" >Projects </Link>
-            </li>
-            <li>
+            </StyledList>
+            <StyledList>
                 <Link href="/articles" >Articles</Link>
-            </li>
-            <li>
+            </StyledList>
+            <StyledList>
                 <Link href="/about" >About</Link>
-            </li>
+            </StyledList>
         </Nav>
         </Header>
       </div>

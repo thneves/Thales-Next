@@ -9,12 +9,16 @@ const HomeContainer = styled(motion.div)`
   background-color: #334257;
 `
 
+const Button = styled(motion.button)`
+
+`
+
 const Intro = () => {
   return (
     <HomeContainer 
        initial={{ opacity: 0.2}}
        animate={{ opacity: 1}}
-       transition={{ duration: 0.8}}
+       transition={{ type:"spring", delay: 0.5, duration: 0.8}}
     >
       <motion.h2 
       initial={{ fontSize: 80}}
