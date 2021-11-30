@@ -12,7 +12,7 @@ const StyledFooter = styled(motion.footer)`
 
   a {
     transition: 0.6s;
-    font-size: 25px;
+    font-size: 28px;
     margin: 10px 0;
     color: #eeeeee;
 

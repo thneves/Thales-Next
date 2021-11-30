@@ -1,16 +1,32 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const HomeContainer = styled(motion.div)`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 80vh;
   background-color: #334257;
 `
 
-const Button = styled(motion.button)`
+const StyledH2 = styled(motion.h2)`
+  margin-bottom: 50px;
+`
 
+const Button = styled(motion.button)`
+  background-color: #548CA8;
+  padding: 5%;
+  color: #eee;
+  border: 6px solid #476072;
+  border-radius: 100%;
+  font-size: 30px;
+  font-variant: small-caps;
+
+  &:hover {
+    cursor: pointer;
+  }
 `
 
 const Intro = () => {
@@ -20,15 +36,23 @@ const Intro = () => {
        animate={{ opacity: 1}}
        transition={{ type:"spring", delay: 0.5, duration: 0.8}}
     >
-      <motion.h2 
-      initial={{ fontSize: 80}}
-      animate={{
-        fontSize: 100, color: '#EEEEEE', x: 20, y: -20
-      }}
-      transition={{ duration: 2}}
+      <StyledH2 
+      initial={{ fontSize: 40, color:"#548Ca8", x: -30, y: -30}}
+      animate={{ fontSize: 60, color: '#EEEEEE', x: 0, y: 0 }}
+      transition={{ duration: 1}}
       >
-        Welcome to my Website
-      </motion.h2> 
+        Welcome to my page!
+      </StyledH2>
+
+        <Link href="/about">
+      <Button
+        initial={{ x: 40, y: 40 }}
+        animate={{ x: 0, y: 0 }}
+        transition={{ duration: 0.6 }}
+      >
+          START
+      </Button>
+        </Link>
     </HomeContainer>
   )
 }

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -8,7 +7,7 @@ export interface ILink {
 }
 
 const Header = styled(motion.header)`
-    height: 10vh;
+    height: 7vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -32,6 +31,7 @@ const StyledList = styled(motion.li)`
         background: #476072;
        text-shadow: 0px 0px 2px rgb(255, 255, 255);
         box-shadow: 0px 0px 8px rgb(255, 255, 255);
+        cursor: pointer;
     }
 `
 
@@ -46,10 +46,7 @@ const Navbar = () => {
             transition={{ duration: 0.8 }}
         >
         <Nav>
-            <StyledList
-
-            
-            >
+            <StyledList>
                 <Link href="/" >Home </Link>
             </StyledList>
             <StyledList>
