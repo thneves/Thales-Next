@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import Image from "next/image";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import Search from "../components/Search";
 import BasicLayout from "../layout/Basic";
 
 const Box = styled.div`
@@ -24,6 +26,7 @@ const Box = styled.div`
 `;
 
 
+
 const Home = () => {
   return (
     <BasicLayout>
@@ -36,6 +39,7 @@ const Home = () => {
             hesitate in getting in contact.
           </p>
         </Box>
+        <Search />  
       <Footer />
     </BasicLayout>
   )

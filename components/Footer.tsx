@@ -6,6 +6,9 @@ const StyledFooter = styled(motion.footer)`
   display: flex;
   justify-content: center;
   text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
   gap: 25px;
   padding: 20px 0;
   background-color: #334257;
