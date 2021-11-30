@@ -1,28 +1,52 @@
 import BasicLayout from "../layout/Basic";
 import Particles from "react-tsparticles";
+import Link from "next/link"
+import styled from "styled-components";
+import { motion } from "framer-motion";
+
+const WrapperDiv = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  z-index: 1;
+`
+
+const Intro = styled(motion.h1)`
+  color: #E8FFFF;
+  text-align: center;
+
+  span {
+    color: #A6F6F1;
+  }
+`
+
+const Button = styled(motion.button)`
+  padding: 10px;
+  background: transparent;
+  border: 2px solid #A6F6F1;
+  font-size: 2rem;
+  color: #E8FFFF;
+  
+`
+
+
 
 const Home = () => {
-  const particlesInit = (main: any) => {
-    console.log(main);
 
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
-  };
-
-  const particlesLoaded = (container: any) => {
-    console.log(container);
-  };
   return (
-    <Particles
+    <BasicLayout>
+      <Particles
+      className="particles"
       id="tsparticles"
-      init={particlesInit}
-      loaded={particlesLoaded}
       options={{
         background: {
           color: {
-            value: "#0d47a1",
+            value: "#213E3B",
           },
         },
-        fpsLimit: 60,
+        fpsLimit: 40,
         interactivity: {
           events: {
             onClick: {
@@ -37,39 +61,39 @@ const Home = () => {
           },
           modes: {
             bubble: {
-              distance: 400,
-              duration: 2,
-              opacity: 0.8,
-              size: 40,
+              distance: 100,
+              duration: 1,
+              opacity: 0.4,
+              size: 50,
             },
             push: {
-              quantity: 4,
+              quantity: 3,
             },
             repulse: {
-              distance: 200,
-              duration: 0.4,
+              distance: 100,
+              duration: 0.6,
             },
           },
         },
         particles: {
           color: {
-            value: "#ffffff",
+            value: "#41AEA9",
           },
           links: {
-            color: "#ffffff",
-            distance: 150,
+            color: "#41AEA9",
+            distance: 180,
             enable: true,
-            opacity: 0.5,
+            opacity: 0.3,
             width: 1,
           },
           collisions: {
             enable: true,
           },
           move: {
-            direction: "none",
+            direction: "top",
             enable: true,
             outMode: "bounce",
-            random: false,
+            random: true,
             speed: 6,
             straight: false,
           },
@@ -78,7 +102,7 @@ const Home = () => {
               enable: true,
               value_area: 800,
             },
-            value: 80,
+            value: 50,
           },
           opacity: {
             value: 0.5,
@@ -88,12 +112,23 @@ const Home = () => {
           },
           size: {
             random: true,
-            value: 5,
+            value: 3,
           },
         },
-        detectRetina: true,
+        detectRetina: false,
       }}
-    />
+    /> 
+
+    <WrapperDiv
+      initial={{x: 200}}
+      animate={{x: 100}}
+      transition={{ duration: 2}}
+    >
+      <Intro>Hello, I'm <span>Thales!</span> I'm a full stack developer.</Intro>
+      <Button><Link href="/home">GET STARTED</Link></Button>
+      </WrapperDiv>
+    </BasicLayout>
+    
   );
 };
 

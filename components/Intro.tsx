@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Avatar } from "avataaars";
 
 const HomeContainer = styled(motion.div)`
   display: flex;
