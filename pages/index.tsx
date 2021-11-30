@@ -124,7 +124,7 @@ const Home = () => {
       animate={{x: 100}}
       transition={{ duration: 2}}
     >
-      <Intro>Hello, I'm <span>Thales!</span> I'm a full stack developer.</Intro>
+      <Intro>Hello, I'm <span>Thales!</span> Welcome to my page.</Intro>
       <Button><Link href="/home">GET STARTED</Link></Button>
       </WrapperDiv>
     </BasicLayout>

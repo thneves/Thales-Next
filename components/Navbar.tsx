@@ -47,16 +47,16 @@ const Navbar = () => {
         >
         <Nav>
             <StyledList>
-                <Link href="/" >Home </Link>
+                <Link href="/" >About </Link>
             </StyledList>
             <StyledList>
                 <Link href="/projects" >Projects </Link>
             </StyledList>
             <StyledList>
-                <Link href="/articles" >Articles</Link>
+                <Link href="/articles" >Skills</Link>
             </StyledList>
             <StyledList>
-                <Link href="/about" >About</Link>
+                <Link href="/about" >Contact</Link>
             </StyledList>
         </Nav>
         </Header>
