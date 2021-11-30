@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { Avatar } from "avataaars";
 
 const HomeContainer = styled(motion.div)`
   display: flex;
@@ -36,6 +37,8 @@ const Intro = () => {
        animate={{ opacity: 1}}
        transition={{ type:"spring", delay: 0.5, duration: 0.8}}
     >
+
+
       <StyledH2 
       initial={{ fontSize: 40, color:"#548Ca8", x: -30, y: -30}}
       animate={{ fontSize: 60, color: '#EEEEEE', x: 0, y: 0 }}
