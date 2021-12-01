@@ -4,7 +4,6 @@ import Image from "next/image"
 import { motion } from "framer-motion";
 import { tags } from "../constants/tags";
 import SearchImg from "../public/search.png";
-import { animate } from "tsparticles";
 
 
 const SearchBox = styled.div`
@@ -19,7 +18,15 @@ const Tags = styled(motion.button)`
   padding: 8px;
   margin: 3px;
   border: 1px solid white;
-  border-radius: 12px;
+  border-radius: 10%;
+  background: #334257;
+  color: #eee;
+  font-size: 15px;
+
+  &:hover {
+    border: none;
+    cursor: pointer;
+  }
 `
 
 const StyledDivTags = styled.div`
@@ -31,7 +38,7 @@ const SearchText = styled(motion.p)`
   font-size: 20px;
   font-weight: lighter;
   font-style: italic;
-  color: white;
+  color: #eee;
   text-shadow: 0px 0px 2px rgb(255, 255, 255);
 
 `
@@ -47,7 +54,7 @@ const Search = () => {
         initial={{ x: -50 }}
         animate={{ x: 0 }}
         transition={{ duration: 2}}
-      >Check something that interests you :)</SearchText>
+      >Check for something that interests you :)</SearchText>
       <StyledDivTags>
         {tags.map(item => {
         return <Tags
