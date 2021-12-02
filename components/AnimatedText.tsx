@@ -6,6 +6,8 @@ const StyledIntro = styled(motion.span)`
   font-size: 25px;
   color: #eee;
   letter-spacing: 0.2px;
+  text-align: center;
+  overflow: auto;
 `
 
 const AnimatedText = () => {
@@ -25,16 +27,15 @@ const AnimatedText = () => {
           })} 
           <br />
 
-          { line2.split("").map((char, index) => {
+          {/* { line2.split("").map((char, index) => {
             return (
               <StyledIntro key={char + "-" + index} variants={letter}>
                 {char}
               </StyledIntro>
             )
-          })}
+          })} */}
           </motion.h3>
   )
-
 }
 
 export default AnimatedText;
