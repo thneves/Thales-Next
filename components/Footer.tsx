@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { RiGithubLine, RiBracesFill, RiLinkedinLine} from "react-icons/ri";
+import { colors } from '../constants/styledVariables'
+
 
 const StyledFooter = styled(motion.footer)`
   display: flex;
@@ -11,7 +13,7 @@ const StyledFooter = styled(motion.footer)`
   bottom: 0;
   gap: 25px;
   padding: 20px 0;
-  background-color: #334257;
+  background-color: ${colors.primaryColor};
 
   a {
     transition: 0.6s;
@@ -20,7 +22,7 @@ const StyledFooter = styled(motion.footer)`
     color: #eeeeee;
 
     &:hover {
-    color: #548CA8;
+    color: ${colors.secondaryColor};
     }
   }
 `

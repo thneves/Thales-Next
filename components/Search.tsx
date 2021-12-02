@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Image from "next/image"
 import { motion } from "framer-motion";
 import { tags } from "../constants/tags";
-import SearchImg from "../public/search.png";
+import SearchImg from "../public/static/images/search.png";
 
 
 const SearchBox = styled.div`
@@ -19,7 +19,7 @@ const Tags = styled(motion.button)`
   margin: 3px;
   border: 1px solid white;
   border-radius: 10%;
-  background: #334257;
+  background: var(--primary-color);
   color: #eee;
   font-size: 15px;
 
