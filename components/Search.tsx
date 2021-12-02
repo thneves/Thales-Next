@@ -4,6 +4,9 @@ import Image from "next/image"
 import { motion } from "framer-motion";
 import { tags } from "../constants/tags";
 import SearchImg from "../public/static/images/search.png";
+import { colors } from "../constants/styledVariables";
+import Cards from "./Cards";
+import { projects } from "../constants/projects";
 
 
 const SearchBox = styled.div`
@@ -19,7 +22,7 @@ const Tags = styled(motion.button)`
   margin: 3px;
   border: 1px solid white;
   border-radius: 10%;
-  background: var(--primary-color);
+  background: ${colors.primaryColor};
   color: #eee;
   font-size: 15px;
 
@@ -45,7 +48,15 @@ const SearchText = styled(motion.p)`
 
 const Search = () => {
 
-  const [tag, setTag] = useState("");
+  
+
+
+  const displayProjects = () => {
+    console.log('oi bb')
+    projects.map(project => {
+      return <Cards name={project.name} tags={project.tags} />
+    })
+  }
 
   return (
     <SearchBox>
@@ -58,12 +69,14 @@ const Search = () => {
       <StyledDivTags>
         {tags.map(item => {
         return <Tags
+          onClick={() => displayProjects()}
           initial={{ x: 50 }}
           animate={{ x: 0 }}
           transition={{ duration: 0.8, repeat: 1 }}
           >{item}</Tags>
         })}
       </StyledDivTags>
+      {displayProjects}
     </SearchBox>
   )
 }
