@@ -14,3 +14,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.particles {
+  z-index: -1;
+}

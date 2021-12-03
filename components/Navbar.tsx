@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { colors } from "../constants/styledVariables";
 
 export interface ILink {
     href: string;
@@ -11,7 +12,7 @@ const Header = styled(motion.header)`
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #334257;
+    background-color: ${colors.primaryColor} ;
 `
 
 const Nav = styled.nav`
@@ -28,7 +29,8 @@ const StyledList = styled(motion.li)`
     border-radius: 10px;
 
     &:hover {
-        background: #476072;
+        background: ${colors.primaryColor};
+        opacity: 0.8;
        text-shadow: 0px 0px 2px rgb(255, 255, 255);
         box-shadow: 0px 0px 8px rgb(255, 255, 255);
         cursor: pointer;
@@ -47,16 +49,16 @@ const Navbar = () => {
         >
         <Nav>
             <StyledList>
-                <Link href="/" >Home </Link>
+                <Link href="/" >About </Link>
             </StyledList>
             <StyledList>
                 <Link href="/projects" >Projects </Link>
             </StyledList>
             <StyledList>
-                <Link href="/articles" >Articles</Link>
+                <Link href="/articles" >Skills</Link>
             </StyledList>
             <StyledList>
-                <Link href="/about" >About</Link>
+                <Link href="/about" >Contact</Link>
             </StyledList>
         </Nav>
         </Header>

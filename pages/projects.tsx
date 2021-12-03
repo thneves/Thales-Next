@@ -7,7 +7,10 @@ const Title = styled.h1`
 
 const Projects = () => {
     return (
-        <Title>Here I will show my projects</Title>
+        <>
+            <Title>Here I will show my projects</Title>
+
+        </>
     )
 }
 
