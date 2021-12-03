@@ -45,18 +45,9 @@ const SearchText = styled(motion.p)`
   text-shadow: 0px 0px 2px rgb(255, 255, 255);
 
 `
-
 const Search = () => {
 
-  
 
-
-  const displayProjects = () => {
-    console.log('oi bb')
-    projects.map(project => {
-      return <Cards name={project.name} tags={project.tags} />
-    })
-  }
 
   return (
     <SearchBox>
@@ -69,16 +60,16 @@ const Search = () => {
       <StyledDivTags>
         {tags.map(item => {
         return <Tags
-          onClick={() => displayProjects()}
           initial={{ x: 50 }}
           animate={{ x: 0 }}
           transition={{ duration: 0.8, repeat: 1 }}
           >{item}</Tags>
         })}
       </StyledDivTags>
-      {displayProjects}
+      <Cards name={projects[1].name} tags={projects[1].tags} />
     </SearchBox>
   )
-}
+};
+
 
 export default Search;
