@@ -64,7 +64,6 @@ const Search = () => {
           >{item}</Tags>
         })}
       </StyledDivTags>
-      <Cards name={projects[1].name} tags={projects[1].tags} />
     </SearchBox>
   )
 };

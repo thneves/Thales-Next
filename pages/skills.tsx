@@ -22,9 +22,9 @@ const Skills = () => {
       <MainDiv>
         <h1>More information about what I know</h1>
         <SkillsDiv>
-          <SkillsCard title="Languages and Frameworks" icon={<RiCodeBoxFill size="4x" />} list={skills.langs_frams} />
-          <SkillsCard title="Libraries" icon={<RiGitMergeLine size="4x" />} list={skills.libs_tools} />
-          <SkillsCard title="Tools and Methods" icon={<RiToolsFill size="4x" />} list={skills.soft} />
+          <SkillsCard title="Languages and Frameworks" icon={<RiCodeBoxFill />} list={skills.langs_frams} />
+          <SkillsCard title="Libraries" icon={<RiGitMergeLine />} list={skills.libs_tools} />
+          <SkillsCard title="Tools and Methods" icon={<RiToolsFill />} list={skills.soft} />
         </SkillsDiv>
       </MainDiv>
     </BasicLayout>
