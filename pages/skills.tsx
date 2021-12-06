@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import SkillsCard from "../components/SkillsCard";
-import { FaBeer } from "react-icons/fa";
+import { RiCodeBoxFill, RiGitMergeLine, RiToolsFill } from "react-icons/ri";
 import BasicLayout from "../layout/Basic";
 import { skills } from "../constants/skills";
 
@@ -22,9 +22,9 @@ const Skills = () => {
       <MainDiv>
         <h1>More information about what I know</h1>
         <SkillsDiv>
-          <SkillsCard title="Languages and Frameworks" icon={<FaBeer />} list={skills.langs_frams} />
-          <SkillsCard title="Libraries" icon={<FaBeer />} list={skills.libs_tools} />
-          <SkillsCard title="Tools and Methods" icon={<FaBeer />} list={skills.soft} />
+          <SkillsCard title="Languages and Frameworks" icon={<RiCodeBoxFill size="4x" />} list={skills.langs_frams} />
+          <SkillsCard title="Libraries" icon={<RiGitMergeLine size="4x" />} list={skills.libs_tools} />
+          <SkillsCard title="Tools and Methods" icon={<RiToolsFill size="4x" />} list={skills.soft} />
         </SkillsDiv>
       </MainDiv>
     </BasicLayout>
