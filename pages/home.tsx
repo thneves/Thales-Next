@@ -19,13 +19,11 @@ const Home = () => {
 
   return (
     <BasicLayout>
-      <Navbar />
         <Box>
           {/* <Image src={HandImg} /> */}
           <AnimatedText />
         </Box>
         <Search />  
-      <Footer />
     </BasicLayout>
   )
 };

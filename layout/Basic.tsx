@@ -1,4 +1,6 @@
 import { createGlobalStyle } from "styled-components";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -31,8 +33,10 @@ export const GlobalStyle = createGlobalStyle`
 const BasicLayout = ({ children }: { children: any }) => {
   return (
     <>
-      <GlobalStyle />
+      <Navbar />
+        <GlobalStyle />
       {children}
+      <Footer />
     </>
   );
 };
