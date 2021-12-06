@@ -1,12 +1,14 @@
+import React, { ReactNode } from "react";
 import { IconType } from "react-icons/lib";
 import styled from "styled-components";
 
 
 interface Props {
   title: string,
-  icon: IconType,
+  icon: ReactNode,
   list: Array<string>
 }
+
 
 const StyledH3 = styled.h3`
   color: blue;
@@ -27,7 +29,7 @@ const SkillsCard: React.FC<Props> = ({ title, icon, list } ) => {
 
   return (
     <StyledDiv>
-      <i>{icon}</i>
+      {icon}
       <StyledH3>{title}</StyledH3>
         <ul>
           {list}
