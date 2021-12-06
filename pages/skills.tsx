@@ -23,6 +23,8 @@ const Skills = () => {
         <h1>More information about what I know</h1>
         <SkillsDiv>
           <SkillsCard title="Languages and Frameworks" icon={<FaBeer />} list={skills.langs_frams} />
+          <SkillsCard title="Libraries" icon={<FaBeer />} list={skills.libs_tools} />
+          <SkillsCard title="Tools and Methods" icon={<FaBeer />} list={skills.soft} />
         </SkillsDiv>
       </MainDiv>
     </BasicLayout>

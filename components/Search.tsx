@@ -47,8 +47,6 @@ const SearchText = styled(motion.p)`
 `
 const Search = () => {
 
-
-
   return (
     <SearchBox>
       <Image src={SearchImg} alt="binocru" width={64} height={64} layout="fixed" />
