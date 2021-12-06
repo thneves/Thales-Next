@@ -49,13 +49,13 @@ const Navbar = () => {
         >
         <Nav>
             <StyledList>
-                <Link href="/" >About </Link>
+                <Link href="/home" >Home </Link>
             </StyledList>
             <StyledList>
                 <Link href="/projects" >Projects </Link>
             </StyledList>
             <StyledList>
-                <Link href="/articles" >Skills</Link>
+                <Link href="/skills" >Skills</Link>
             </StyledList>
             <StyledList>
                 <Link href="/about" >Contact</Link>

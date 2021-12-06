@@ -47,8 +47,6 @@ const SearchText = styled(motion.p)`
 `
 const Search = () => {
 
-
-
   return (
     <SearchBox>
       <Image src={SearchImg} alt="binocru" width={64} height={64} layout="fixed" />
@@ -66,7 +64,6 @@ const Search = () => {
           >{item}</Tags>
         })}
       </StyledDivTags>
-      <Cards name={projects[1].name} tags={projects[1].tags} />
     </SearchBox>
   )
 };
