@@ -44,7 +44,9 @@ const StyledDivTags = styled.div`
 
 const SearchText = styled(motion.p)`
   font-size: 24px;
-  font-weight: lighter;
+  font-weight: 300;
+  font-style: oblique;
+  opacity: 0.8;
   color: ${colors.lightText};
 `
 

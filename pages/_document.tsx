@@ -10,9 +10,14 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>Thales</title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        </Head>
+          <link
+            rel="preload"
+            href="/static/fonts/TlwgTypewriter.ttf"
+            as="font"
+            crossOrigin=""
+          >
+          </link>
+          </Head>
         <body>
           <Main />
           <NextScript />

@@ -1,4 +1,3 @@
-import { FaBeer } from "react-icons/fa";
 
 export const skills = {
   langs_frams: [
