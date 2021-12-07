@@ -19,7 +19,7 @@ const StyledH2 = styled(motion.h2)`
 const Button = styled(motion.button)`
   background-color: ${colors.darkerColor};
   padding: 5%;
-  color: #eee;
+  color: ${colors.lightText};
   border: 6px solid ${colors.darkerColor};
   border-radius: 100%;
   font-size: 30px;

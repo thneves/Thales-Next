@@ -1,12 +1,7 @@
-import { useState } from "react";
 import styled from "styled-components";
-import Image from "next/image"
 import { motion } from "framer-motion";
 import { tags } from "../constants/tags";
-import SearchImg from "../public/static/images/search.png";
 import { colors } from "../constants/styledVariables";
-import Cards from "./Cards";
-import { projects } from "../constants/projects";
 
 
 const SearchBox = styled.div`
@@ -18,12 +13,13 @@ const SearchBox = styled.div`
 `
 
 const Tags = styled(motion.button)`
+  width: 100px;
   padding: 8px;
   margin: 3px;
-  border: 1px solid white;
+  border: 1px solid ${colors.primaryColor};
   border-radius: 10%;
-  background: ${colors.primaryColor};
-  color: #eee;
+  background: ${colors.darkColor};
+  color: ${colors.primaryColor};
   font-size: 15px;
 
   &:hover {
@@ -38,18 +34,15 @@ const StyledDivTags = styled.div`
 `
 
 const SearchText = styled(motion.p)`
-  font-size: 20px;
+  font-size: 24px;
   font-weight: lighter;
-  font-style: italic;
-  color: #eee;
-  text-shadow: 0px 0px 2px rgb(255, 255, 255);
-
+  color: ${colors.lightText};
 `
+
 const Search = () => {
 
   return (
     <SearchBox>
-      <Image src={SearchImg} alt="binocru" width={64} height={64} layout="fixed" />
       <SearchText
         initial={{ x: -50 }}
         animate={{ x: 0 }}

@@ -4,24 +4,21 @@ import { RiGithubLine, RiBracesFill, RiLinkedinLine} from "react-icons/ri";
 import { colors } from '../constants/styledVariables'
 
 const StyledFooter = styled(motion.footer)`
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  gap: 25px;
-  padding: 20px 0;
-  background-color: ${colors.darkColor};
+  position: absolute;
+  bottom: 300px;
+  left: 60px;
 
   a {
+    display: flex;
+    flex-direction: column;
     transition: 0.6s;
-    font-size: 28px;
-    margin: 10px 0;
+    font-size: 32px;
+    padding: 12px;
     color: ${colors.lightText};
 
     &:hover {
     color: ${colors.primaryColor};
+    margin-left: 12px;
     }
   }
 `
