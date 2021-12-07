@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { RiGithubLine, RiBracesFill, RiLinkedinLine } from "react-icons/ri";
-import { colors } from '../constants/styledVariables'
+import { colors } from '../constants/styledVariables';
 
 const StyledFooter = styled(motion.div)`
   position: fixed;

@@ -9,13 +9,20 @@ interface Props {
 }
 
 const StyledH3 = styled.h3`
-  color: ${colors.primaryColor}
+  color: ${colors.primaryColor};
+  font-weight: lighter;
+  text-align: center;
+  font-size: 22px;
+  width: 100%;
+  height: 60px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid ${colors.primaryColor};
 `
 
 const IconDiv = styled.div`
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 10%;
+  width: 100%;
+  text-align: center;
+  border-radius: 5%;
   color: ${colors.primaryColor};
 `
 
@@ -24,19 +31,23 @@ const StyledList = styled.ul`
   flex-direction: column;
   align-items: flex-start;
   justify-content: start;
-`
-
-const StyledItem = styled.li`
+  `;
+  
+  const StyledItem = styled.li`
   color: ${colors.lightText};
-`
+  font-size: 18px;
+  margin-bottom: 5px;
+`;
 
 const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid white;
+  width: 300px;
+  height: fit-content;
+  border: 1px solid ${colors.primaryColor};
   border-radius: 10% ;
-  padding: 30px;
+  padding: 20px;
   background-color: ${colors.darkColor};
 `
 
