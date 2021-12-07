@@ -12,7 +12,7 @@ const Header = styled(motion.header)`
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: ${colors.primaryColor} ;
+    background-color: ${colors.darkColor} ;
 `
 
 const Nav = styled.nav`
@@ -20,7 +20,7 @@ const Nav = styled.nav`
     justify-content: space-around;
     align-items: center;
     gap: 10px;
-    color: #eeeeee;
+    color: ${colors.lightText};
 `;
 
 const StyledList = styled(motion.li)`
@@ -30,8 +30,8 @@ const StyledList = styled(motion.li)`
 
     &:hover {
         background: ${colors.primaryColor};
+        font-weight: 700;
         opacity: 0.8;
-       text-shadow: 0px 0px 2px rgb(255, 255, 255);
         box-shadow: 0px 0px 8px rgb(255, 255, 255);
         cursor: pointer;
     }

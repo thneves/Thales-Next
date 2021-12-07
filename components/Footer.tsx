@@ -12,16 +12,16 @@ const StyledFooter = styled(motion.footer)`
   bottom: 0;
   gap: 25px;
   padding: 20px 0;
-  background-color: ${colors.primaryColor};
+  background-color: ${colors.darkColor};
 
   a {
     transition: 0.6s;
     font-size: 28px;
     margin: 10px 0;
-    color: #eeeeee;
+    color: ${colors.lightText};
 
     &:hover {
-    color: ${colors.secondaryColor};
+    color: ${colors.primaryColor};
     }
   }
 `

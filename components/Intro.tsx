@@ -9,7 +9,7 @@ const HomeContainer = styled(motion.div)`
   justify-content: center;
   align-items: center;
   height: 80vh;
-  background-color: ${colors.primaryColor};
+  background-color: ${colors.darkerColor};
 `
 
 const StyledH2 = styled(motion.h2)`
@@ -17,10 +17,10 @@ const StyledH2 = styled(motion.h2)`
 `
 
 const Button = styled(motion.button)`
-  background-color: ${colors.secondaryColor};
+  background-color: ${colors.darkerColor};
   padding: 5%;
   color: #eee;
-  border: 6px solid ${colors.primaryColor};
+  border: 6px solid ${colors.darkerColor};
   border-radius: 100%;
   font-size: 30px;
   font-variant: small-caps;

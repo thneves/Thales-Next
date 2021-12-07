@@ -8,16 +8,15 @@ interface Props {
   list: Array<string>
 }
 
+const StyledH3 = styled.h3`
+  color: ${colors.primaryColor}
+`
+
 const IconDiv = styled.div`
-  background-color: ${colors.secondaryColor};
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 10%;
-  color: #fff;
-`
-
-const StyledH3 = styled.h3`
-  color: ${colors.secondaryColor};
+  color: ${colors.primaryColor};
 `
 
 const StyledList = styled.ul`
@@ -28,7 +27,7 @@ const StyledList = styled.ul`
 `
 
 const StyledItem = styled.li`
-  color: #fff;
+  color: ${colors.lightText};
 `
 
 const StyledDiv = styled.div`
@@ -38,8 +37,7 @@ const StyledDiv = styled.div`
   border: 2px solid white;
   border-radius: 10% ;
   padding: 30px;
-  box-shadow: 0px 0px 5px rgb(0, 255, 221);
-  background-color: ${colors.primaryColor};
+  background-color: ${colors.darkColor};
 `
 
 const SkillsCard: React.FC<Props> = ({ title, icon, list }) => {

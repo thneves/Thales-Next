@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { colors } from "../constants/styledVariables";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -15,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: #548CA8;
+    background-color: ${colors.darkerColor};
   }
 
   a {

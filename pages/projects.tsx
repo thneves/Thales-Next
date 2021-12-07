@@ -10,7 +10,6 @@ const Projects = () => {
     return (
         <BasicLayout>
             <Title>Here I will show my projects</Title>
-
         </BasicLayout>
     )
 }
