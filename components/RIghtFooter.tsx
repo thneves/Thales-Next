@@ -14,7 +14,7 @@ const Rule = styled.hr`
   background-color: ${colors.lightText};
 `;
 
-const Email = styled.span`
+const Email = styled.a`
   font-size: 17px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -28,6 +28,11 @@ const Email = styled.span`
     cursor: pointer;
     margin-right: 8px;
   }
+
+  span {
+    color: ${colors.primaryColor};
+    font-size: 22px;
+  }
 `
 
 const RightFooter = () => {
@@ -38,7 +43,7 @@ const RightFooter = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8}}
       >
-        <Email>tsneves11@gmail.com</Email>
+        <Email href="mailto:tsneves11@gmail.com">tsneves11<span>@</span>gmail.com</Email>
         <Rule />
       </StyledFooter>
     </>

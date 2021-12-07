@@ -68,13 +68,24 @@ const SearchText = styled(motion.p)`
   font-style: oblique;
   opacity: 0.8;
   color: ${colors.lightText};
-`
+`;
+
+const Rule = styled.hr`
+  height: 100px;
+  width: 4px;
+  background-color: ${colors.primaryColor};
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+`;
+
 
 const Search = () => {
 
   return (
-    <SearchBox>
-    <StyledIcon2 />
+    <>
+      <SearchBox>
+      <StyledIcon2 />
     {/* <StyledIcon src="/static/images/T.svg" width="120" height="120" /> */}
       <SearchText
         initial={{ x: -50 }}
@@ -91,6 +102,8 @@ const Search = () => {
         })}
       </StyledDivTags>
     </SearchBox>
+      <Rule />
+      </>
   )
 };
 
