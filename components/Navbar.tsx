@@ -19,20 +19,21 @@ const Nav = styled.nav`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 10px;
-    color: ${colors.lightText};
+    gap: 13px;
+    color: ${colors.primaryColor};
 `;
 
 const StyledList = styled(motion.li)`
-    padding: 8px;
+    padding: 8px 20px;
     transition: 0.3s;
     border-radius: 10px;
+    margin: 0 5px;
 
     &:hover {
-        background: ${colors.primaryColor};
+        background: ${colors.darkerColor};
         font-weight: 700;
         opacity: 0.8;
-        box-shadow: 0px 0px 8px rgb(255, 255, 255);
+        box-shadow: 0px 0px 8px ${colors.primaryColor};
         cursor: pointer;
     }
 `

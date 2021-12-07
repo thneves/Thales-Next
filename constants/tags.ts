@@ -6,7 +6,6 @@ export const tags = [
   "Redux",
   "Rails",
   "Ruby",
-  "Front End",
   "Full Stack",
   "Games",
   "Mobile",

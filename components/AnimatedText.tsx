@@ -1,19 +1,22 @@
 import styled from "styled-components";
+import { colors } from "../constants/styledVariables";
 import { motion } from "framer-motion";
-import {line1, line2, sentence, letter} from "../constants/motionText";
+import {line1, sentence, letter} from "../constants/motionText";
+
+const StyledMotion = styled(motion.h3)`
+  width: 75%;
+  text-align: center;
+`
 
 const StyledIntro = styled(motion.span)`
   font-size: 25px;
-  color: #eee;
-  letter-spacing: 0.2px;
-  text-align: center;
-  overflow: auto;
+  color: ${colors.lightText};
 `
 
 const AnimatedText = () => {
 
   return (
-    <motion.h3
+    <StyledMotion
             variants={sentence}
             initial="hidden"
             animate="visible"
@@ -34,7 +37,7 @@ const AnimatedText = () => {
               </StyledIntro>
             )
           })} */}
-          </motion.h3>
+          </StyledMotion>
   )
 }
 
