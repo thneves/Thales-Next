@@ -23,7 +23,12 @@ const Logo = styled.div`
     left: 4%;
     top: 1%;
     font-family: CostaRica;
-`
+    transition: 0.6s;
+
+    &:hover {
+      text-shadow: 0px 0px 20px ${colors.primaryColor};
+    }
+`;
 
 const Nav = styled.nav`
     display: flex;
@@ -40,7 +45,7 @@ const StyledList = styled(motion.li)`
     
     font-size: 20px;
     color: ${colors.primaryColor};
-    transition: 0.5s;
+    transition: 0.6s;
 
     &:hover {
         background: ${colors.darkerColor};

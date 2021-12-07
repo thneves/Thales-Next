@@ -17,7 +17,7 @@ const StyledH2 = styled(motion.h2)`
 `
 
 const Button = styled(motion.button)`
-  background-color: ${colors.darkerColor};
+  background-color: ${colors.primaryColor};
   padding: 5%;
   color: ${colors.lightText};
   border: 6px solid ${colors.darkerColor};
@@ -40,8 +40,8 @@ const Intro = () => {
 
 
       <StyledH2 
-      initial={{ fontSize: 40, color:"#548Ca8", x: -30, y: -30}}
-      animate={{ fontSize: 60, color: '#EEEEEE', x: 0, y: 0 }}
+      initial={{ fontSize: 40, color:"#E49F38", x: -30, y: -30}}
+      animate={{ fontSize: 60, color: '#E49F38', x: 0, y: 0 }}
       transition={{ duration: 1}}
       >
         Welcome to my page!

@@ -4,12 +4,13 @@ import { RiGithubLine, RiBracesFill, RiLinkedinLine} from "react-icons/ri";
 import { colors } from '../constants/styledVariables'
 
 const StyledFooter = styled(motion.footer)`
-  position: absolute;
-  bottom: 300px;
+  position: fixed;
+  bottom: 0;
   left: 4%;
+`
 
-  a {
-    display: flex;
+const StyledLink = styled.a`
+  display: flex;
     flex-direction: column;
     transition: 0.6s;
     font-size: 32px;
@@ -18,8 +19,17 @@ const StyledFooter = styled(motion.footer)`
 
     &:hover {
     color: ${colors.primaryColor};
-    margin-left: 12px;
+    margin-left: 8px;
     }
+`
+    
+const Rule = styled.hr`
+  height: 300px;
+  width: 2px;
+  background-color: ${colors.lightText};
+
+  &:hover {
+    margin-left: 0;
   }
 `
 
@@ -41,17 +51,20 @@ const Footer = () => {
   ]
 
   return (
+    <>
     <StyledFooter
       initial={{ y: 50, opacity: 0.2}}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
      {links.map((link, index) => {
-       return <a key={index} href={link.url} target="_blank">
+       return <StyledLink key={index} href={link.url} target="_blank">
          <link.icon />
-       </a>
+       </StyledLink>
      })}
+     <Rule />
     </StyledFooter>
+    </>
   )
 }
 
