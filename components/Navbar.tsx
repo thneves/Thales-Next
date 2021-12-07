@@ -78,9 +78,6 @@ const Navbar = () => {
             <StyledList>
                 <Link href="/skills" >Skills</Link>
             </StyledList>
-            <StyledList>
-                <Link href="/about" >Contact</Link>
-            </StyledList>
         </Nav>
         </Header>
       </div>

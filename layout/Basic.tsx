@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import Footer from "../components/Footer";
+import LeftFooter from "../components/LeftFooter";
 import Navbar from "../components/Navbar";
 import { colors } from "../constants/styledVariables";
 
@@ -25,7 +25,6 @@ export const GlobalStyle = createGlobalStyle`
   ul, li {
     list-style-type: none;
   }
-  
   // anything else you would like to include
 `;
 
@@ -35,7 +34,7 @@ const BasicLayout = ({ children }: { children: any }) => {
       <Navbar />
         <GlobalStyle />
       {children}
-      <Footer />
+      <LeftFooter />
     </>
   );
 };

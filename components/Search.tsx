@@ -11,6 +11,7 @@ const SearchBox = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  max-width: 540px;
 `
 
 const Tags = styled(motion.button)`

@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import {line1, sentence, letter} from "../constants/motionText";
 
 const StyledMotion = styled(motion.h3)`
-  width: 75%;
+  width: 540px;
+  max-width: 542px;
   text-align: center;
 `
 
