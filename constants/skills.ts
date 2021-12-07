@@ -1,11 +1,10 @@
-import { FaBeer } from "react-icons/fa";
 
 export const skills = {
   langs_frams: [
     "HTML",
     "CSS",
     "Ruby",
-    "Ruby",  
+    "Ruby on Rails",  
     "Javascript",
     "React",
     "NodeJS"
@@ -16,11 +15,11 @@ export const skills = {
     "Styled Components",
     "Framer Motion",
     "Redux",
+    "Jest",
+    "Axios",
+    "Rspec",
     "ChartJs",
     "Phaser 3",
-    "Git",
-    "Github",
-    "VScode",
   ],
   soft: [
     "Remote Work",
@@ -28,6 +27,12 @@ export const skills = {
     "Agile Methods",
     "Fluent English",
     "Communication",
-    "Self Learner"
+    "Self Learner",
+    "Git",
+    "Github",
+    "Yarn / Npm",
+    "VScode",
+    "Linux"
   ],
 }
+

@@ -9,7 +9,7 @@ const HomeContainer = styled(motion.div)`
   justify-content: center;
   align-items: center;
   height: 80vh;
-  background-color: ${colors.primaryColor};
+  background-color: ${colors.darkerColor};
 `
 
 const StyledH2 = styled(motion.h2)`
@@ -17,10 +17,10 @@ const StyledH2 = styled(motion.h2)`
 `
 
 const Button = styled(motion.button)`
-  background-color: ${colors.secondaryColor};
+  background-color: ${colors.primaryColor};
   padding: 5%;
-  color: #eee;
-  border: 6px solid ${colors.primaryColor};
+  color: ${colors.lightText};
+  border: 6px solid ${colors.darkerColor};
   border-radius: 100%;
   font-size: 30px;
   font-variant: small-caps;
@@ -40,8 +40,8 @@ const Intro = () => {
 
 
       <StyledH2 
-      initial={{ fontSize: 40, color:"#548Ca8", x: -30, y: -30}}
-      animate={{ fontSize: 60, color: '#EEEEEE', x: 0, y: 0 }}
+      initial={{ fontSize: 40, color:"#E49F38", x: -30, y: -30}}
+      animate={{ fontSize: 60, color: '#E49F38', x: 0, y: 0 }}
       transition={{ duration: 1}}
       >
         Welcome to my page!

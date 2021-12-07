@@ -4,11 +4,11 @@ export const tags = [
   "Sass",
   "React",
   "Redux",
-  "Ruby on Rails",
+  "Rails",
   "Ruby",
-  "Front End",
   "Full Stack",
   "Games",
   "Mobile",
   "API",
+  "Javascript"
 ]

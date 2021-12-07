@@ -7,7 +7,7 @@ export const sentence = {
     opacity: 1,
     transition: {
       delay: 0.5,
-      staggerChildren: 0.04
+      staggerChildren: 0.02
     }
   }
 };

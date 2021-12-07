@@ -1,29 +1,32 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { RiGithubLine, RiBracesFill, RiLinkedinLine} from "react-icons/ri";
-import { colors } from '../constants/styledVariables'
+import { RiGithubLine, RiBracesFill, RiLinkedinLine } from "react-icons/ri";
+import { colors } from '../constants/styledVariables';
 
-const StyledFooter = styled(motion.footer)`
-  display: flex;
-  justify-content: center;
-  text-align: center;
+const StyledFooter = styled(motion.div)`
   position: fixed;
-  width: 100%;
   bottom: 0;
-  gap: 25px;
-  padding: 20px 0;
-  background-color: ${colors.primaryColor};
+  left: 4%;
+`
 
-  a {
+const StyledLink = styled.a`
+  display: flex;
+    flex-direction: column;
     transition: 0.6s;
-    font-size: 28px;
-    margin: 10px 0;
-    color: #eeeeee;
+    font-size: 32px;
+    padding: 12px 0;
+    color: ${colors.lightText};
 
     &:hover {
-    color: ${colors.secondaryColor};
+    color: ${colors.primaryColor};
+    margin-left: 8px;
     }
-  }
+`
+    
+const Rule = styled.hr`
+  height: 300px;
+  width: 2px;
+  background-color: ${colors.lightText};
 `
 
 const Footer = () => {
@@ -44,17 +47,20 @@ const Footer = () => {
   ]
 
   return (
+    <>
     <StyledFooter
-      initial={{ y: 50, opacity: 0.2}}
+      initial={{ y: 100, opacity: 0.2}}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}
     >
      {links.map((link, index) => {
-       return <a key={index} href={link.url} target="_blank">
+       return <StyledLink key={index} href={link.url} target="_blank">
          <link.icon />
-       </a>
+       </StyledLink>
      })}
+     <Rule />
     </StyledFooter>
+    </>
   )
 }
 

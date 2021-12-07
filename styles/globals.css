@@ -1,9 +1,40 @@
+
+@font-face {
+  font-family: "TlwgTypewriter";
+  src: url("/static/fonts/TlwgTypewriter.tff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TlwgTypewriter";
+  src: url("/static/fonts/TlwgTypewriter-Bold.tff");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TlwgTypewriter";
+  src: url("/static/fonts/TlwgTypewriter-Oblique.tff");
+  font-weight: 300;
+  font-style: oblique;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CostaRica";
+  src: url("/static/fonts/CostaRica.otf");
+  font-weight: 400;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif,
+    TlwgTypewriter, CostaRica;
 }
 
 a {

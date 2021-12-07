@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import Link from "next/link";
+
 import { colors } from "../constants/styledVariables";
 
 export interface ILink {
@@ -12,27 +13,44 @@ const Header = styled(motion.header)`
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: ${colors.primaryColor} ;
-`
+    background-color: ${colors.darkColor} ;
+`;
+
+const Logo = styled.div`
+    font-size: 50px;
+    color: ${colors.primaryColor};
+    position: absolute;
+    left: 4%;
+    top: 1%;
+    font-family: CostaRica;
+    transition: 0.6s;
+
+    &:hover {
+      text-shadow: 0px 0px 20px ${colors.primaryColor};
+    }
+`;
 
 const Nav = styled.nav`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 10px;
-    color: #eeeeee;
-`;
+    gap: 13px;
+    `;
 
 const StyledList = styled(motion.li)`
-    padding: 8px;
+    padding: 8px 20px;
     transition: 0.3s;
     border-radius: 10px;
+    margin: 0 5px;
+    
+    font-size: 20px;
+    color: ${colors.primaryColor};
+    transition: 0.6s;
 
     &:hover {
-        background: ${colors.primaryColor};
+        background: ${colors.darkerColor};
         opacity: 0.8;
-       text-shadow: 0px 0px 2px rgb(255, 255, 255);
-        box-shadow: 0px 0px 8px rgb(255, 255, 255);
+        box-shadow: 0px 0px 8px ${colors.primaryColor};
         cursor: pointer;
     }
 `
@@ -47,6 +65,9 @@ const Navbar = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
         >
+        <Logo>
+            <Link href="/">T</Link>
+        </Logo>
         <Nav>
             <StyledList>
                 <Link href="/home" >Home </Link>
@@ -56,9 +77,6 @@ const Navbar = () => {
             </StyledList>
             <StyledList>
                 <Link href="/skills" >Skills</Link>
-            </StyledList>
-            <StyledList>
-                <Link href="/about" >Contact</Link>
             </StyledList>
         </Nav>
         </Header>

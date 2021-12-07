@@ -1,21 +1,22 @@
 import { createGlobalStyle } from "styled-components";
-import Footer from "../components/Footer";
+import LeftFooter from "../components/LeftFooter";
 import Navbar from "../components/Navbar";
+import RightFooter from "../components/RIghtFooter";
+import { colors } from "../constants/styledVariables";
 
 export const GlobalStyle = createGlobalStyle`
 
-
     // this is the shared style
-
 
   html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
-
+  
   body {
-    background-color: #548CA8;
+    background-color: ${colors.darkerColor};
+    font-family: TlwgTypewriter;
   }
 
   a {
@@ -25,8 +26,6 @@ export const GlobalStyle = createGlobalStyle`
   ul, li {
     list-style-type: none;
   }
-
-  
   // anything else you would like to include
 `;
 
@@ -36,7 +35,8 @@ const BasicLayout = ({ children }: { children: any }) => {
       <Navbar />
         <GlobalStyle />
       {children}
-      <Footer />
+      <LeftFooter />
+      <RightFooter />
     </>
   );
 };

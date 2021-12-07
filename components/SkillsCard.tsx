@@ -8,16 +8,22 @@ interface Props {
   list: Array<string>
 }
 
-const IconDiv = styled.div`
-  background-color: ${colors.secondaryColor};
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 10%;
-  color: #fff;
+const StyledH3 = styled.h3`
+  color: ${colors.primaryColor};
+  font-weight: lighter;
+  text-align: center;
+  font-size: 22px;
+  width: 100%;
+  height: 60px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid ${colors.primaryColor};
 `
 
-const StyledH3 = styled.h3`
-  color: ${colors.secondaryColor};
+const IconDiv = styled.div`
+  width: 100%;
+  text-align: center;
+  border-radius: 5%;
+  color: ${colors.primaryColor};
 `
 
 const StyledList = styled.ul`
@@ -25,21 +31,24 @@ const StyledList = styled.ul`
   flex-direction: column;
   align-items: flex-start;
   justify-content: start;
-`
-
-const StyledItem = styled.li`
-  color: #fff;
-`
+  `;
+  
+  const StyledItem = styled.li`
+  color: ${colors.lightText};
+  font-size: 18px;
+  margin-bottom: 5px;
+`;
 
 const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px solid white;
+  width: 300px;
+  height: fit-content;
+  border: 1px solid ${colors.primaryColor};
   border-radius: 10% ;
-  padding: 30px;
-  box-shadow: 0px 0px 5px rgb(0, 255, 221);
-  background-color: ${colors.primaryColor};
+  padding: 20px;
+  background-color: ${colors.darkColor};
 `
 
 const SkillsCard: React.FC<Props> = ({ title, icon, list }) => {
