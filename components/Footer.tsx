@@ -6,14 +6,14 @@ import { colors } from '../constants/styledVariables'
 const StyledFooter = styled(motion.footer)`
   position: absolute;
   bottom: 300px;
-  left: 60px;
+  left: 4%;
 
   a {
     display: flex;
     flex-direction: column;
     transition: 0.6s;
     font-size: 32px;
-    padding: 12px;
+    padding: 12px 0;
     color: ${colors.lightText};
 
     &:hover {

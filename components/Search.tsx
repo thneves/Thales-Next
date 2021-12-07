@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image from "next/image"
 import { motion } from "framer-motion";
 import { FaSearch } from "react-icons/fa"
 import { tags } from "../constants/tags";
@@ -29,10 +30,28 @@ const Tags = styled(motion.button)`
   }
 `
 
-const StyledIcon = styled(FaSearch)`
-  font-size: 52px;
+const StyledIcon2 = styled(FaSearch)`
+  font-size: 42px;
   color: ${colors.primaryColor};
-  transition: 0.6s;
+  transition: 1s;
+
+  &:hover {
+    background-color: ${colors.primaryColor};
+    font-size: 42px;
+    border-radius: 50%;
+    color: ${colors.darkerColor};
+    padding: 20px;
+  }
+`
+
+const StyledIcon = styled(Image)`
+  transition: 1s;
+
+  &:hover {
+    background-color: ${colors.primaryColor};
+    border-radius: 50%;
+    color: ${colors.darkerColor};
+  }
 `
 
 const StyledDivTags = styled.div`
@@ -54,7 +73,8 @@ const Search = () => {
 
   return (
     <SearchBox>
-    <StyledIcon />
+    <StyledIcon2 />
+    {/* <StyledIcon src="/static/images/T.svg" width="120" height="120" /> */}
       <SearchText
         initial={{ x: -50 }}
         animate={{ x: 0 }}

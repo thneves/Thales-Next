@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import Link from "next/link";
+
 import { colors } from "../constants/styledVariables";
 
 export interface ILink {
@@ -13,6 +14,15 @@ const Header = styled(motion.header)`
     display: flex;
     justify-content: center;
     background-color: ${colors.darkColor} ;
+`;
+
+const Logo = styled.div`
+    font-size: 50px;
+    color: ${colors.primaryColor};
+    position: absolute;
+    left: 4%;
+    top: 1%;
+    font-family: CostaRica;
 `
 
 const Nav = styled.nav`
@@ -50,6 +60,9 @@ const Navbar = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
         >
+        <Logo>
+            <Link href="/">T</Link>
+        </Logo>
         <Nav>
             <StyledList>
                 <Link href="/home" >Home </Link>
