@@ -1,6 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import LeftFooter from "../components/LeftFooter";
 import Navbar from "../components/Navbar";
+import RightFooter from "../components/RIghtFooter";
 import { colors } from "../constants/styledVariables";
 
 export const GlobalStyle = createGlobalStyle`
@@ -35,6 +36,7 @@ const BasicLayout = ({ children }: { children: any }) => {
         <GlobalStyle />
       {children}
       <LeftFooter />
+      <RightFooter />
     </>
   );
 };

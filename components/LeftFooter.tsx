@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { RiGithubLine, RiBracesFill, RiLinkedinLine} from "react-icons/ri";
+import { RiGithubLine, RiBracesFill, RiLinkedinLine } from "react-icons/ri";
 import { colors } from '../constants/styledVariables'
 
-const StyledFooter = styled(motion.footer)`
+const StyledFooter = styled(motion.div)`
   position: fixed;
   bottom: 0;
   left: 4%;
@@ -27,10 +27,6 @@ const Rule = styled.hr`
   height: 300px;
   width: 2px;
   background-color: ${colors.lightText};
-
-  &:hover {
-    margin-left: 0;
-  }
 `
 
 const Footer = () => {
@@ -53,7 +49,7 @@ const Footer = () => {
   return (
     <>
     <StyledFooter
-      initial={{ y: 50, opacity: 0.2}}
+      initial={{ y: 100, opacity: 0.2}}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}
     >

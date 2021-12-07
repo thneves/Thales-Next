@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Footer from "../components/Footer";
+import Footer from "../components/LeftFooter";
 import Navbar from "../components/Navbar";
 import Search from "../components/Search";
 import BasicLayout from "../layout/Basic";
