@@ -30,9 +30,11 @@ export const skills = {
     "Self Learner",
     "Git",
     "Github",
+    "Github Actions",
+    "Linters",
     "Yarn / Npm",
     "VScode",
-    "Linux"
+    "Linux",
   ],
 }
 

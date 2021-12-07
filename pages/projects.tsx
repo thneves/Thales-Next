@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ProjectsCard from "../components/ProjectCard";
 import BasicLayout from "../layout/Basic";
 
 const Title = styled.h1`
@@ -9,7 +10,7 @@ const Title = styled.h1`
 const Projects = () => {
     return (
         <BasicLayout>
-            <Title>Here I will show my projects</Title>
+            <ProjectsCard />
         </BasicLayout>
     )
 }

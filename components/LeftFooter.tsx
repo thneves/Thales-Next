@@ -48,18 +48,18 @@ const Footer = () => {
 
   return (
     <>
-    <StyledFooter
-      initial={{ y: 100, opacity: 0.2}}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.8 }}
-    >
-     {links.map((link, index) => {
-       return <StyledLink key={index} href={link.url} target="_blank">
-         <link.icon />
-       </StyledLink>
-     })}
-     <Rule />
-    </StyledFooter>
+      <StyledFooter
+        initial={{ y: 100, opacity: 0.2}}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
+      {links.map((link, index) => {
+        return <StyledLink key={index} href={link.url} target="_blank">
+          <link.icon />
+        </StyledLink>
+      })}
+      <Rule />
+      </StyledFooter>
     </>
   )
 }
