@@ -29,9 +29,10 @@ const Projects = () => {
             key={index}
             title={project.title}
             description={project.description}
-            tags={project.tags}
+            tags={project.tags.map(item => <span>{item}</span>)}
             live={project.live}
-            source={project.source}    
+            source={project.source}
+            image={project.image}    
           />
         )
       })

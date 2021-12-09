@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { colors } from "../constants/styledVariables";
-import ProjectImg from '../public/static/images/js-city-weather.png';
 import 'remixicon/fonts/remixicon.css'
 import Image from "next/image";
+import { ReactNode } from "react";
 
 const ProjectContainer = styled.div`
   margin: 50px auto;
@@ -34,7 +34,7 @@ const ScreenShot = styled.a`
 
 const InfoDiv = styled.div`
   color: ${colors.lightText};
-  width: 300px;
+  width: 400px;
   height: 122px;
   right: 6%;
   border-radius: 20px;
@@ -48,7 +48,6 @@ const TitleDiv = styled.div`
   flex-direction: column;
   align-items: flex-end;
   gap: 2px;
-  margin-right: 4%;
     
     h6 {
       color: ${colors.primaryColor};
@@ -72,10 +71,10 @@ const TitleDiv = styled.div`
 
 const Description = styled.p`
   color: ${colors.lightText};
-  font-size: 18px;
+  font-size: 17px;
   text-shadow: 0px 0px 4px ${colors.darkerColor};
   text-align: justify;
-  width: 420px;
+  width: 480px;
   position: absolute;
   right: 0;
   bottom: 30%;
@@ -95,9 +94,10 @@ const ProjectTags = styled.div`
   span {
     font-size: 14px;
     font-variant: small-caps;
-    margin-left: 12px;
-
-    ${colors.lightText}
+    font-weight: bold;
+    margin-left: 18px;
+    color: ${colors.primaryColor}
+    
   }
 `;
 
@@ -107,7 +107,7 @@ const ExternalLinks = styled.div`
   bottom: 5%;
   right: 0;
 
-  span {
+  a {
     margin-left: 20px;
     &:hover {
       color: ${colors.primaryColor};
@@ -121,17 +121,18 @@ const ExternalLinks = styled.div`
 interface Props {
   title: string,
   description: string | undefined,
-  tags: Array<string>,
+  tags: ReactNode,
   live: string,
-  source: string
+  source: string,
+  image: string
 }
 
-const ProjectsCard: React.FC<Props> = ({title, description, tags, live, source}) => {
+const ProjectsCard: React.FC<Props> = ({title, description, tags, live, source, image}) => {
   return (
     <ProjectContainer>
       <ScreenShot >
-        <Image src={ProjectImg} width="540" height="360" />
-        <div></div>
+        <Image src={`/${image}`} width="540" height="360" />
+        <div />
       </ScreenShot>
       <InfoDiv>
           <TitleDiv>
@@ -142,7 +143,7 @@ const ProjectsCard: React.FC<Props> = ({title, description, tags, live, source})
             {description}
           </Description>
           <ProjectTags>
-            {tags}
+            <span>{tags}</span>
           </ProjectTags>
           <ExternalLinks>
             <a href={source} target="_blank">
