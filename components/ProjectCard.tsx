@@ -106,9 +106,10 @@ const ExternalLinks = styled.div`
   position: absolute;
   bottom: 5%;
   right: 0;
-
+  
   a {
     margin-left: 20px;
+    transition: ease-in 0.4s;
     &:hover {
       color: ${colors.primaryColor};
     }

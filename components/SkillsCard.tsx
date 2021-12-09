@@ -44,10 +44,8 @@ const StyledDiv = styled.div`
   flex-direction: column;
   align-items: center;
   width: 300px;
-  height: 600px;
-  height: fit-content;
   border: 1px solid ${colors.primaryColor};
-  border-radius: 10% ;
+  border-radius: 22px ;
   padding: 20px;
   background-color: ${colors.darkColor};
 `;
