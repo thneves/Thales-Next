@@ -1,7 +1,5 @@
 export const projects = [
-  {
-    name: "main",
-    items: [
+  
       { title: "Tri Tracker",
         description: "Tracking app for triathlon activities. Records of distance, moving time, date and pace. Graphic chart of progress provided and authentication.",
         tags: ["react", "redux", "chartjs", "jest", "axios", "heroku"],
@@ -9,15 +7,15 @@ export const projects = [
         source: "https://github.com/thneves/tri-tracker-client"
       },
       {
-        title: "Formula 1 Catalogue",
-        description: "Check F1 information about seasons ranking, circuits, drivers and more with a modern dark UI. Fetching data from external API.",
+        title: "F1 Catalogue",
+        description: "Check Formula One information about seasons ranking, circuits, drivers and more with a modern dark UI. Fetching data from external API.",
         tags: ["react", "redux", "api", "ui-design","axios", "netlify"],
         live: "https://f1catalogue.netlify.app/",  
         source: "https://github.com/thneves/FormulaOne-Catalogue"
       },
       {
         title: "Let Me Ask",
-        descrition: "Platform for content creators create Q&A rooms for their audience in a democratic way. Hosted by Firebase.",
+        description: "Platform for content creators create Q&A rooms for their audience in a democratic way. Hosted by Firebase.",
         tags: ["typescript", "react", "firebase", "google auth"],
         live: "https://let-me-ask-f210b.firebaseapp.com/",
         source: "https://github.com/thneves/Let-Me-Ask"
@@ -30,7 +28,7 @@ export const projects = [
         source: "https://github.com/thneves/SurFriends"
       },
       {
-        title: "Fisherman Local Hero",
+        title: "Local Hero",
         description: "2D game, shoot your enemies on the sea from your boat. Ranking available and sound options.",
         tags: ["javascript", "phaser 3", "jest", "shooter game"],
         live: "https://thneves.github.io/Local-Hero/",
@@ -57,7 +55,4 @@ export const projects = [
         live: "https://thneves.github.io/Capstone/",
         source: "https://github.com/thneves/Capstone"
       }
-    ]
-
-  }
 ]

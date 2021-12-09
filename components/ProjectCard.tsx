@@ -118,7 +118,15 @@ const ExternalLinks = styled.div`
 // Description = 496x122
 //
 
-const ProjectsCard = () => {
+interface Props {
+  title: string,
+  description: string | undefined,
+  tags: Array<string>,
+  live: string,
+  source: string
+}
+
+const ProjectsCard: React.FC<Props> = ({title, description, tags, live, source}) => {
   return (
     <ProjectContainer>
       <ScreenShot >
@@ -128,23 +136,21 @@ const ProjectsCard = () => {
       <InfoDiv>
           <TitleDiv>
             <h6>Project</h6>
-            <h5>City Weather</h5>
+            <h5>{title}</h5>
           </TitleDiv>
           <Description>
-            Find out the the current weather of any city with a simple and beautiful UI. Is it sunny in Florianopolis now?
+            {description}
           </Description>
           <ProjectTags>
-            <span>javascript</span>
-            <span>webpack</span>
-            <span>api</span>
+            {tags}
           </ProjectTags>
           <ExternalLinks>
-            <span>
+            <a href={source} target="_blank">
               <i className="ri-github-line ri-2x"></i>
-            </span>
-            <span>
+            </a>
+            <a href={live} target="_blank">
               <i className="ri-external-link-line ri-2x"></i>
-            </span>
+            </a>
           </ExternalLinks>
       </InfoDiv>
     </ProjectContainer>
