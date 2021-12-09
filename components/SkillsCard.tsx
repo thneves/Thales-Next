@@ -44,6 +44,7 @@ const StyledDiv = styled.div`
   flex-direction: column;
   align-items: center;
   width: 300px;
+  margin: 40px auto 50px auto;
   border: 1px solid ${colors.primaryColor};
   border-radius: 22px ;
   padding: 20px;

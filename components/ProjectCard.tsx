@@ -5,7 +5,7 @@ import Image from "next/image";
 import { ReactNode } from "react";
 
 const ProjectContainer = styled.div`
-  margin: 50px auto;
+  margin: 40px auto 50px auto;
   width: fit-content;
   display: flex;
   position: relative;
@@ -23,7 +23,7 @@ const ScreenShot = styled.a`
     z-index: 1;
     background: ${colors.primaryColor};
     opacity: 0.7;
-    transition: ease-in-out 0.9s;
+    transition: ease-in-out 0.5s;
 
     &:hover {
       opacity: 0;

@@ -6,7 +6,7 @@ const Title = styled.h1`
   color: ${colors.lightText};
   font-size: 30px;
   text-align: center;
-  margin: 30px auto;
+  margin: 40px auto;
   padding-bottom: 10px;
   letter-spacing: 2px;
   border-bottom: 1px solid ${colors.primaryColor};
