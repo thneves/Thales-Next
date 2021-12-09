@@ -4,8 +4,6 @@ import BasicLayout from "../layout/Basic";
 import { projects } from "../constants/projects";
 import Heading from "../components/Heading";
 
-
-
 const WrapperDiv = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,6 +14,7 @@ const Projects = () => {
     projects.map((project, index) => {
         return (
           <ProjectsCard
+            sideProp={index % 2 === 0 ? true : false}
             key={index}
             title={project.title}
             description={project.description}

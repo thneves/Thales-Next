@@ -4,7 +4,6 @@ import Heading from "../components/Heading";
 import 'remixicon/fonts/remixicon.css'
 import BasicLayout from "../layout/Basic";
 import { skills } from "../constants/skills";
-import { colors } from "../constants/styledVariables";
 
 const MainDiv = styled.main`
   display: flex;

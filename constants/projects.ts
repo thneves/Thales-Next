@@ -1,11 +1,3 @@
-import TriTracker from "../public/static/images/react-tri.png"
-import F1Catalogue from "../public/static/images/react-f1.png";
-import LetMeAsk from "../public/static/images/ts-let.png";
-import Surfriends from "../public/static/images/rails-surf.png";
-import LocalHero from "../public/static/images/js-local-hero.png";
-import CityWeather from "../public/static/images/js-city-weather.png";
-import WSL from "../public/static/images/ruby-wsl.png";
-import TSH from "../public/static/images/html-css-tsh.png"; 
 
 export const projects = [
   {
