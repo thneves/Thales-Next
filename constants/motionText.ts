@@ -6,8 +6,8 @@ export const sentence = {
   visible: {
     opacity: 1,
     transition: {
-      delay: 1,
-      staggerChildren: 0.04
+      delay: 0.8,
+      staggerChildren: 0.03
     }
   }
 };

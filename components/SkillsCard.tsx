@@ -50,12 +50,18 @@ const StyledDiv = styled(motion.div)`
   border-radius: 22px ;
   padding: 20px;
   background-color: ${colors.darkColor};
+  box-shadow: 0 0 14px ${colors.primaryColor};
 `;
 
 const SkillsCard: React.FC<Props> = ({ title, icon, list }) => {
 
-  return (
-    <StyledDiv>
+   return (
+    <StyledDiv
+      initial={{ opacity: 0.2 }}
+      animate={{ rotate: 360, opacity: 1 }}
+      transition={{ duration: 1.1 }}
+
+    >
       <IconDiv>{icon}</IconDiv>
       <StyledH3>{title}</StyledH3>
         <StyledList>
