@@ -27,14 +27,14 @@ const IconDiv = styled.div`
   color: ${colors.primaryColor};
 `
 
-const StyledList = styled.ul`
+const StyledList = styled(motion.ul)`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: start;
   `;
   
-  const StyledItem = styled.li`
+  const StyledItem = styled(motion.li)`
   color: ${colors.lightText};
   font-size: 18px;
   margin-bottom: 5px;
@@ -55,16 +55,33 @@ const StyledDiv = styled(motion.div)`
 
 const SkillsCard: React.FC<Props> = ({ title, icon, list }) => {
 
+  const container = {
+    hidden: { opacity: 0, rotate: 180 },
+    show: {
+      opacity: 1,
+      rotate: 360,
+      transition: {
+        delayChildren: 0.7
+      }
+    }
+  }
+  
+  const item = {
+    hidden: { opacity: 0, rotate: 360 },
+    show: { opacity: 1, rotate: 0,
+     },
+  }
+
    return (
     <StyledDiv
-      initial={{ opacity: 0.2 }}
-      animate={{ rotate: 360, opacity: 1 }}
-      transition={{ duration: 1.1 }}
+      initial="hidden"
+      animate={"show"}
+      variants={container}
 
     >
       <IconDiv>{icon}</IconDiv>
       <StyledH3>{title}</StyledH3>
-        <StyledList>
+        <StyledList variants={item}>
           {list.map((item, index) => {
             return (
               <StyledItem key={index}>{item}</StyledItem>
