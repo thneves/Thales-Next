@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import styled from "styled-components";
 import { colors } from "../constants/styledVariables";
+import { motion } from "framer-motion";
 
 interface Props {
   title: string,
@@ -39,17 +40,17 @@ const StyledList = styled.ul`
   margin-bottom: 5px;
 `;
 
-const StyledDiv = styled.div`
+const StyledDiv = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 300px;
-  height: fit-content;
+  margin: 40px auto 50px auto;
   border: 1px solid ${colors.primaryColor};
-  border-radius: 10% ;
+  border-radius: 22px ;
   padding: 20px;
   background-color: ${colors.darkColor};
-`
+`;
 
 const SkillsCard: React.FC<Props> = ({ title, icon, list }) => {
 

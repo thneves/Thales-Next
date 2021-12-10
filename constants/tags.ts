@@ -1,14 +1,14 @@
 export const tags = [
-  "HTML",
-  "CSS",
-  "Sass",
+  "Featured",
+  "HTML/CSS",
+  "Javascript",
   "React",
   "Redux",
   "Rails",
   "Ruby",
   "Full Stack",
   "Games",
-  "Mobile",
   "API",
-  "Javascript"
+  "Node JS",
+  "Typescript"
 ]
