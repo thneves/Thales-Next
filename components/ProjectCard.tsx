@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { colors } from "../constants/styledVariables";
+import { motion } from "framer-motion";
 import 'remixicon/fonts/remixicon.css'
 import Image from "next/image";
 import { ReactNode } from "react";
@@ -75,7 +76,7 @@ const TitleDiv = styled.div<SideProps>`
   }
 `;
 
-const Description = styled.p<SideProps>`
+const Description = styled(motion.p)<SideProps>`
   color: ${colors.lightText};
   font-size: 17px;
   text-shadow: 0px 0px 4px ${colors.darkerColor};
@@ -111,7 +112,7 @@ const ProjectTags = styled.div<SideProps>`
   }
 `;
 
-const ExternalLinks = styled.div<SideProps>`
+const ExternalLinks = styled(motion.div)<SideProps>`
   text-align: end;
   position: absolute;
   bottom: 5%;
@@ -158,13 +159,23 @@ const ProjectsCard: React.FC<Props> = ({title, description, tags, live, source, 
             <h6>Project</h6>
             <h5>{title}</h5>
           </TitleDiv>
-          <Description side={sideProp}>
-            {description}
+          <Description
+            side={sideProp}
+            initial={{x: -100, opacity: 0}}
+            animate={{x: 0, opacity: 1}}
+            transition={{duration: 2}}
+          >
+              {description}
           </Description>
           <ProjectTags side={sideProp}>
             <span>{tags}</span>
           </ProjectTags>
-          <ExternalLinks side={sideProp}>
+          <ExternalLinks
+            side={sideProp}
+            initial={{x: -100, opacity: 0}}
+            animate={{x: 0, opacity: 1}}
+            transition={{duration: 2}}
+          >
             <a href={source} target="_blank">
               <i className="ri-github-line ri-2x"></i>
             </a>
