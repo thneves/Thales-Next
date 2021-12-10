@@ -70,7 +70,7 @@ const SearchText = styled(motion.p)`
   color: ${colors.lightText};
 `;
 
-const Rule = styled.hr`
+const Rule = styled(motion.hr)`
   height: 100px;
   width: 4px;
   background-color: ${colors.primaryColor};
@@ -95,14 +95,18 @@ const Search = () => {
       <StyledDivTags>
         {tags.map(item => {
         return <Tags
-          initial={{ x: 50 }}
-          animate={{ x: 0 }}
-          transition={{ duration: 0.8, repeat: 1 }}
+          initial={{ y: 100 }}
+          animate={{ y: 0 }}
+          transition={{ duration: 0.8   }}
           >{item}</Tags>
         })}
       </StyledDivTags>
     </SearchBox>
-      <Rule />
+      <Rule 
+        initial={{ y: 100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 1 }}
+      />
       </>
   )
 };

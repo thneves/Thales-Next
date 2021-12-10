@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import styled from "styled-components";
 import { colors } from "../constants/styledVariables";
+import { motion } from "framer-motion";
 
 interface Props {
   title: string,
@@ -39,7 +40,7 @@ const StyledList = styled.ul`
   margin-bottom: 5px;
 `;
 
-const StyledDiv = styled.div`
+const StyledDiv = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: center;

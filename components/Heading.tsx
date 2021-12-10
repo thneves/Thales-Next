@@ -14,7 +14,7 @@ const Title = styled.h1`
 `;
 
 const BottomLine = styled(motion.div)`
-  height: 5px;
+  height: 4px;
   width: 30%;
   margin: 0 auto 30px auto;
   background-color: ${colors.primaryColor};
@@ -30,7 +30,7 @@ const Heading: React.FC<Props> = ( props ) => {
       <>
         <Title>Things I've {props.word}</Title>
         <BottomLine 
-          initial={{ x: -200, opacity: 0, y: -50 }}
+          initial={{ x: -100, opacity: 0, y: 50 }}
           animate={{ x: 0, opacity: 1, y: 0 }}
           transition={{ ease: "easeOut", duration: 1 }}
         />
