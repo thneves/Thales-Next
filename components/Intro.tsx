@@ -10,11 +10,11 @@ const HomeContainer = styled(motion.div)`
   align-items: center;
   height: 80vh;
   background-color: ${colors.darkerColor};
-`
+`;
 
 const StyledH2 = styled(motion.h2)`
   margin-bottom: 50px;
-`
+`;
 
 const Button = styled(motion.button)`
   background-color: ${colors.primaryColor};
@@ -28,36 +28,34 @@ const Button = styled(motion.button)`
   &:hover {
     cursor: pointer;
   }
-`
+`;
 
 const Intro = () => {
   return (
-    <HomeContainer 
-       initial={{ opacity: 0.2}}
-       animate={{ opacity: 1}}
-       transition={{ type:"spring", delay: 0.5, duration: 0.8}}
+    <HomeContainer
+      initial={{ opacity: 0.2 }}
+      animate={{ opacity: 1 }}
+      transition={{ type: "spring", delay: 0.5, duration: 0.8 }}
     >
-
-
-      <StyledH2 
-      initial={{ fontSize: 40, color:"#E49F38", x: -30, y: -30}}
-      animate={{ fontSize: 60, color: '#E49F38', x: 0, y: 0 }}
-      transition={{ duration: 1}}
+      <StyledH2
+        initial={{ fontSize: 40, color: "#E49F38", x: -30, y: -30 }}
+        animate={{ fontSize: 60, color: "#E49F38", x: 0, y: 0 }}
+        transition={{ duration: 1 }}
       >
         Welcome to my page!
       </StyledH2>
 
-        <Link href="/about">
-      <Button
-        initial={{ x: 40, y: 40 }}
-        animate={{ x: 0, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
+      <Link href="/about">
+        <Button
+          initial={{ x: 40, y: 40 }}
+          animate={{ x: 0, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
           START
-      </Button>
-        </Link>
+        </Button>
+      </Link>
     </HomeContainer>
-  )
-}
+  );
+};
 
 export default Intro;

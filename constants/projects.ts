@@ -1,4 +1,3 @@
-
 export const projects = [
   {
     title: "Tri Tracker",
@@ -82,16 +81,18 @@ export const projects = [
   },
   {
     title: "Javascript Library",
-    description: "Simple web page to store books, created for practicing Javascript and Local Storage.",
+    description:
+      "Simple web page to store books, created for practicing Javascript and Local Storage.",
     tags: ["javascript", "local storage", "html"],
-    live: "https://alansoto31.github.io/Library/",  
+    live: "https://alansoto31.github.io/Library/",
     source: "https://github.com/thneves/Library",
     image: "../public/static/images/js-library.png",
     featured: false,
   },
   {
     title: "To Do App",
-    description: "One more to do app on the web, created for practicing Javascript and Webpack.",
+    description:
+      "One more to do app on the web, created for practicing Javascript and Webpack.",
     tags: ["javascript", "webpack", "bootstrap"],
     live: "https://thneves.github.io/To-Do-App/",
     source: "https://github.com/thneves/To-Do-App",
@@ -100,8 +101,8 @@ export const projects = [
   },
   {
     title: "Bookstore CMS",
-    description: 
-        "Web application to manage a bookstore by maintaining its state. You can add new books and filter your bookstore by category. This project was created to practice the use of React and Redux.",
+    description:
+      "Web application to manage a bookstore by maintaining its state. You can add new books and filter your bookstore by category. This project was created to practice the use of React and Redux.",
     tags: ["react", "redux"],
     live: "https://bookstore-cms-ocean.herokuapp.com/",
     source: "https://github.com/thneves/Bookstore",
@@ -110,11 +111,12 @@ export const projects = [
   },
   {
     title: "React Calculator",
-    description: "Basic calculator project when I first started learning React :)",
+    description:
+      "Basic calculator project when I first started learning React :)",
     tags: ["react", "react hooks"],
     live: "unavailable", // fix deploys
     source: "https://github.com/thneves/React-Calculator",
     image: "../public/static/images/react-calculator.png",
-    featured: false
+    featured: false,
   },
 ];
