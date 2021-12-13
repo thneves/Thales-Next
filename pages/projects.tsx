@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import ProjectsCard from "../components/ProjectCard";
 import BasicLayout from "../layout/Basic";
 import { projects } from "../constants/projects";
 import Heading from "../components/Heading";
+import ProjectsCard from "../components/ProjectCard";
 
 const WrapperDiv = styled.div`
   display: flex;

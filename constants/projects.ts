@@ -3,8 +3,8 @@ export const projects = [
     title: "Tri Tracker",
     description:
       "Tracking app for triathlon activities. Records of distance, moving time, date and pace. Graphic chart of progress provided and authentication.",
-    tags: ["react", "redux", "chartjs", "jest", "axios", "heroku"],
-    searchTags: ['full stack', 'react', 'redux', 'rails', 'api'],
+    tags: ["react", "redux", "chartjs", "jest", "rails", "heroku"],
+    searchTags: ['full stack', 'react', 'redux', 'rails', 'api', 'featured'],
     live: "https://tri-tracker.herokuapp.com",
     source: "https://github.com/thneves/tri-tracker-client",
     image: "../public/static/images/react-tri.png",
@@ -37,7 +37,7 @@ export const projects = [
     description:
       "Social media web app based on twitter. Users can follow other users, create posts, and more.",
     tags: ["rails", "rspec", "cloudinary", "tdd", "heroku"],
-    searchTags: ['rails', 'full stack'],
+    searchTags: ['rails', 'full stack', 'ruby'],
     live: "https://surfriends.herokuapp.com",
     source: "https://github.com/thneves/SurFriends",
     image: "../public/static/images/rails-surf.png",
@@ -81,7 +81,7 @@ export const projects = [
     description:
       "Front end prototype of a search engine. Project created to practice the basics, responsiviness and design guidelines.",
     tags: ["html", "css", "plain css", "responsive"],
-    searchTags: ['htmlcss'],
+    searchTags: ['html/css'],
     live: "https://thneves.github.io/Capstone/",
     source: "https://github.com/thneves/Capstone",
     image: "../public/static/images/html-css-tsh.png",
