@@ -84,7 +84,6 @@ const Search = () => {
     <>
       <SearchBox>
         <StyledIcon2 />
-        {/* <StyledIcon src="/static/images/T.svg" width="120" height="120" /> */}
         <SearchText
           initial={{ x: -50 }}
           animate={{ x: 0 }}
