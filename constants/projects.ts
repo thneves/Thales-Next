@@ -15,7 +15,7 @@ export const projects = [
     description:
       "Check Formula One information about seasons ranking, circuits, drivers and more with a modern dark UI. Fetching data from external API.",
     tags: ["react", "redux", "api", "ui-design", "axios", "netlify"],
-    searchTags: ['react', 'api', 'redux'],
+    searchTags: ['react', 'api', 'redux','featured'],
     live: "https://f1catalogue.netlify.app/",
     source: "https://github.com/thneves/FormulaOne-Catalogue",
     image: "../public/static/images/react-f1.png",
@@ -26,7 +26,7 @@ export const projects = [
     description:
       "Platform for content creators create Q&A rooms for their audience in a democratic way. Hosted by Firebase.",
     tags: ["typescript", "react", "firebase", "google auth"],
-    searchTags: ['react', 'typescript', 'full stack'],
+    searchTags: ['react', 'typescript', 'full stack', 'featured'],
     live: "https://let-me-ask-f210b.firebaseapp.com/",
     source: "https://github.com/thneves/Let-Me-Ask",
     image: "../public/static/images/ts-let.png",
@@ -37,7 +37,7 @@ export const projects = [
     description:
       "Social media web app based on twitter. Users can follow other users, create posts, and more.",
     tags: ["rails", "rspec", "cloudinary", "tdd", "heroku"],
-    searchTags: ['rails', 'full stack', 'ruby'],
+    searchTags: ['rails', 'full stack', 'ruby', 'featured'],
     live: "https://surfriends.herokuapp.com",
     source: "https://github.com/thneves/SurFriends",
     image: "../public/static/images/rails-surf.png",
@@ -48,7 +48,7 @@ export const projects = [
     description:
       "2D game, shoot your enemies on the sea from your boat. Ranking available and sound options.",
     tags: ["javascript", "phaser 3", "jest", "shooter game"],
-    searchTags: ['javascript', 'games'],
+    searchTags: ['javascript', 'games', 'featured'],
     live: "https://thneves.github.io/Local-Hero/",
     source: "https://github.com/thneves/Local-Hero",
     image: "../public/static/images/js-local-hero.png",
@@ -59,7 +59,7 @@ export const projects = [
     description:
       "Find out the current weather, date and time, wind speed and humidity levels of any city, with a simple yet beautiful UI.",
     tags: ["javascript", "webpack", "api", "bootstrap"],
-    searchTags: ['javascript', 'api'],
+    searchTags: ['javascript', 'api',  'featured'],
     live: "https://thneves.github.io/City-Weather/",
     source: "https://github.com/thneves/City-Weather",
     image: "../public/static/images/js-city-weather.png",
@@ -70,7 +70,7 @@ export const projects = [
     description:
       "Web scraper program created with Ruby. It checks for the next events and the current surfers on the top ranking from a chosen country. Info from World Surf League.",
     tags: ["ruby", "nokogiri", "web scraper", "api"],
-    searchTags: ['ruby', 'api'],
+    searchTags: ['ruby', 'api',  'featured'],
     live: "https://replit.com/@ThalesNeves/WSL-scraper#bin/main.rb",
     source: "https://github.com/thneves/WSL-scraper",
     image: "../public/static/images/ruby-wsl.png",
@@ -81,7 +81,7 @@ export const projects = [
     description:
       "Front end prototype of a search engine. Project created to practice the basics, responsiviness and design guidelines.",
     tags: ["html", "css", "plain css", "responsive"],
-    searchTags: ['html/css'],
+    searchTags: ['html/css',  'featured'],
     live: "https://thneves.github.io/Capstone/",
     source: "https://github.com/thneves/Capstone",
     image: "../public/static/images/html-css-tsh.png",
@@ -113,7 +113,7 @@ export const projects = [
     title: "Bookstore CMS",
     description:
       "Web application to manage a bookstore by maintaining its state. You can add new books and filter your bookstore by category. This project was created to practice the use of React and Redux.",
-    tags: ["react", "redux"],
+    tags: ["react", "redux", 'react hooks', 'local storage'],
     searchTags: ['react', 'redux'],
     live: "https://bookstore-cms-ocean.herokuapp.com/",
     source: "https://github.com/thneves/Bookstore",

@@ -134,6 +134,7 @@ interface Props {
   source: string;
   image: string;
   sideProp: boolean;
+  key: Number;
 }
 
 interface SideProps {
