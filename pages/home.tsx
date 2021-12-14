@@ -5,7 +5,6 @@ import Search from "../components/Search";
 import BasicLayout from "../layout/Basic";
 import AnimatedText from "../components/AnimatedText";
 
-
 const Box = styled.div`
   margin: 5% auto;
   display: flex;
@@ -16,16 +15,15 @@ const Box = styled.div`
 `;
 
 const Home = () => {
-
   return (
     <BasicLayout>
-        <Box>
-          {/* <Image src={HandImg} /> */}
-          <AnimatedText />
-        </Box>
-        <Search />  
+      <Box>
+        {/* <Image src={HandImg} /> */}
+        <AnimatedText />
+      </Box>
+      <Search />
     </BasicLayout>
-  )
+  );
 };
 
 export default Home;

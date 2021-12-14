@@ -4,4 +4,3 @@ export const colors = {
   darkColor: '#1E1D1D',
   lightText: '#fff'
 };
-

@@ -1,9 +1,11 @@
+import React  from "react";
+import { useRouter } from "next/router";
 import styled from "styled-components";
-import Image from "next/image"
 import { motion } from "framer-motion";
-import { FaSearch } from "react-icons/fa"
+import { FaSearch } from "react-icons/fa";
 import { tags } from "../constants/tags";
 import { colors } from "../constants/styledVariables";
+import { projects } from "../constants/projects";
 
 const SearchBox = styled.div`
   display: flex;
@@ -12,7 +14,7 @@ const SearchBox = styled.div`
   align-items: center;
   margin: 0 auto;
   max-width: 540px;
-`
+`;
 
 const Tags = styled(motion.button)`
   width: 100px;
@@ -29,7 +31,7 @@ const Tags = styled(motion.button)`
     cursor: pointer;
     border-top-left-radius: 50%;
   }
-`
+`;
 
 const StyledIcon2 = styled(FaSearch)`
   font-size: 42px;
@@ -43,24 +45,14 @@ const StyledIcon2 = styled(FaSearch)`
     color: ${colors.darkerColor};
     padding: 20px;
   }
-`
-
-const StyledIcon = styled(Image)`
-  transition: 1s;
-
-  &:hover {
-    background-color: ${colors.primaryColor};
-    border-radius: 50%;
-    color: ${colors.darkerColor};
-  }
-`
+`;
 
 const StyledDivTags = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   margin: 0 auto;
-`
+`;
 
 const SearchText = styled(motion.p)`
   font-size: 24px;
@@ -82,34 +74,51 @@ const Rule = styled(motion.hr)`
 
 const Search = () => {
 
+  const router = useRouter();
+
+  const handleSearchTag = (event: any) => {
+    event.preventDefault();
+    let currentTag = event.target.innerText.toLowerCase();
+    projects.map((project) => {
+      project.searchTags.includes(currentTag) ? project.featured = true : project.featured = false;
+    })
+    // console.log(currentTag);
+    router.push('/projects');
+  }
+
   return (
     <>
       <SearchBox>
-      <StyledIcon2 />
-    {/* <StyledIcon src="/static/images/T.svg" width="120" height="120" /> */}
-      <SearchText
-        initial={{ x: -50 }}
-        animate={{ x: 0 }}
-        transition={{ duration: 2}}
-      >Look for projects that interests you :)</SearchText>
-      <StyledDivTags>
-        {tags.map(item => {
-        return <Tags
-          initial={{ y: 100 }}
-          animate={{ y: 0 }}
-          transition={{ duration: 0.8   }}
-          >{item}</Tags>
-        })}
-      </StyledDivTags>
-    </SearchBox>
-      <Rule 
+        <StyledIcon2 />
+        <SearchText
+          initial={{ x: -50 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 2 }}
+        >
+          Look for projects that interests you :)
+        </SearchText>
+        <StyledDivTags>
+          {tags.map((item) => {
+            return (
+              <Tags
+                onClick={handleSearchTag}
+                initial={{ y: 100 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 0.8 }}
+              >
+                {item}
+              </Tags>
+            );
+          })}
+        </StyledDivTags>
+      </SearchBox>
+      <Rule
         initial={{ y: 100 }}
         animate={{ y: 0 }}
         transition={{ duration: 1 }}
       />
-      </>
-  )
+    </>
+  );
 };
-
 
 export default Search;

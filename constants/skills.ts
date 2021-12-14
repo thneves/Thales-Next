@@ -1,13 +1,12 @@
-
 export const skills = {
   langs_frams: [
     "HTML",
     "CSS",
     "Ruby",
-    "Ruby on Rails",  
+    "Ruby on Rails",
     "Javascript",
     "React",
-    "NodeJS"
+    "NodeJS",
   ],
   libs_tools: [
     "Sass",
@@ -24,7 +23,6 @@ export const skills = {
   soft: [
     "Remote Work",
     "Pair Programming",
-    "Agile Methods",
     "Fluent English",
     "Communication",
     "Self Learner",
@@ -36,5 +34,4 @@ export const skills = {
     "VScode",
     "Linux",
   ],
-}
-
+};

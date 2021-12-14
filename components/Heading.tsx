@@ -18,24 +18,23 @@ const BottomLine = styled(motion.div)`
   width: 30%;
   margin: 0 auto 30px auto;
   background-color: ${colors.primaryColor};
-`
+`;
 
-interface Props  {
+interface Props {
   word: ReactNode;
 }
 
-const Heading: React.FC<Props> = ( props ) => {
-
-    return (
-      <>
-        <Title>Things I've {props.word}</Title>
-        <BottomLine 
-          initial={{ x: -100, opacity: 0, y: 50 }}
-          animate={{ x: 0, opacity: 1, y: 0 }}
-          transition={{ ease: "easeOut", duration: 1 }}
-        />
-      </>
-    )
-}
+const Heading: React.FC<Props> = (props) => {
+  return (
+    <>
+      <Title>Things I've {props.word}</Title>
+      <BottomLine
+        initial={{ x: -100, opacity: 0, y: 50 }}
+        animate={{ x: 0, opacity: 1, y: 0 }}
+        transition={{ ease: "easeOut", duration: 1 }}
+      />
+    </>
+  );
+};
 
 export default Heading;

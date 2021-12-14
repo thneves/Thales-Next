@@ -1,8 +1,10 @@
 import styled from "styled-components";
-import ProjectsCard from "../components/ProjectCard";
+import { useRouter } from "next/router";
 import BasicLayout from "../layout/Basic";
 import { projects } from "../constants/projects";
 import Heading from "../components/Heading";
+import ProjectsCard from "../components/ProjectCard";
+import FilterButton from "../components/FilterButton";
 
 const WrapperDiv = styled.div`
   display: flex;
@@ -10,6 +12,9 @@ const WrapperDiv = styled.div`
 `;
 
 const Projects = () => {
+
+  const router = useRouter();
+
   const renderProjects = projects.map((project, index) => {
     if (project.featured) {
       return (
@@ -29,10 +34,19 @@ const Projects = () => {
     }
   });
 
+  const handleReset = () => {
+    projects.map(project => {
+      if(project.searchTags.includes('featured')) {
+        project.featured = true;
+      }
+    });
+  }
+
   return (
     <BasicLayout>
       <WrapperDiv>
         <Heading word="Built"></Heading>
+        <FilterButton handleReset={handleReset} />
         {renderProjects}
       </WrapperDiv>
     </BasicLayout>
