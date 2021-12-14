@@ -98,9 +98,10 @@ const Search = () => {
           Look for projects that interests you :)
         </SearchText>
         <StyledDivTags>
-          {tags.map((item) => {
+          {tags.map((item, index) => {
             return (
               <Tags
+                key={index}
                 onClick={handleSearchTag}
                 initial={{ y: 100 }}
                 animate={{ y: 0 }}

@@ -45,7 +45,7 @@ const Intro = () => {
         Welcome to my page!
       </StyledH2>
 
-      <Link href="/about">
+      <Link href="/about" passHref>
         <Button
           initial={{ x: 40, y: 40 }}
           animate={{ x: 0, y: 0 }}
