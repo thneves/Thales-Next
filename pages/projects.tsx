@@ -5,6 +5,7 @@ import { projects } from "../constants/projects";
 import Heading from "../components/Heading";
 import ProjectsCard from "../components/ProjectCard";
 import FilterButton from "../components/FilterButton";
+import { Head } from "next/document";
 
 const WrapperDiv = styled.div`
   display: flex;
@@ -43,13 +44,13 @@ const Projects = () => {
   }
 
   return (
-    <BasicLayout>
-      <WrapperDiv>
-        <Heading word="Built"></Heading>
-        <FilterButton handleReset={handleReset} />
-        {renderProjects}
-      </WrapperDiv>
-    </BasicLayout>
+      <BasicLayout>
+        <WrapperDiv>
+          <Heading word="Built"></Heading>
+          <FilterButton handleReset={handleReset} />
+          {renderProjects}
+        </WrapperDiv>
+      </BasicLayout>
   );
 };
 
