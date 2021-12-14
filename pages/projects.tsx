@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { useRouter } from "next/router";
 import BasicLayout from "../layout/Basic";
 import { projects } from "../constants/projects";
 import Heading from "../components/Heading";
