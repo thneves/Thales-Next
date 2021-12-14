@@ -5,7 +5,6 @@ import { projects } from "../constants/projects";
 import Heading from "../components/Heading";
 import ProjectsCard from "../components/ProjectCard";
 import FilterButton from "../components/FilterButton";
-import { Head } from "next/document";
 
 const WrapperDiv = styled.div`
   display: flex;
