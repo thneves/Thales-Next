@@ -23,7 +23,6 @@ export const skills = {
   soft: [
     "Remote Work",
     "Pair Programming",
-    "Agile Methods",
     "Fluent English",
     "Communication",
     "Self Learner",
