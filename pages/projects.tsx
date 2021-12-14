@@ -23,8 +23,8 @@ const Projects = () => {
           key={index}
           title={project.title}
           description={project.description}
-          tags={project.tags.map((item) => (
-            <span>{item}</span>
+          tags={project.tags.map((item, index) => (
+            <span key={index}>{item}</span>
           ))}
           live={project.live}
           source={project.source}

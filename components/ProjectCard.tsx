@@ -153,7 +153,7 @@ const ProjectsCard: React.FC<Props> = ({
   return (
     <ProjectContainer side={sideProp}>
       <ScreenShot>
-        <Image src={`/${image}`} width="540" height="360" />
+        <Image src={`/${image}`} width="540" height="360" alt="project screenshot"/>
         <div />
       </ScreenShot>
       <InfoDiv side={sideProp}>
@@ -178,10 +178,10 @@ const ProjectsCard: React.FC<Props> = ({
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 2 }}
         >
-          <a href={source} target="_blank">
+          <a href={source} target="_blank" rel="noreferrer">
             <i className="ri-github-line ri-2x"></i>
           </a>
-          <a href={live} target="_blank">
+          <a href={live} target="_blank" rel="noreferrer">
             <i className="ri-external-link-line ri-2x"></i>
           </a>
         </ExternalLinks>

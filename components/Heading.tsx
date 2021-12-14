@@ -27,7 +27,7 @@ interface Props {
 const Heading: React.FC<Props> = (props) => {
   return (
     <>
-      <Title>Things I've {props.word}</Title>
+      <Title>Things I&apos;ve {props.word}</Title>
       <BottomLine
         initial={{ x: -100, opacity: 0, y: 50 }}
         animate={{ x: 0, opacity: 1, y: 0 }}

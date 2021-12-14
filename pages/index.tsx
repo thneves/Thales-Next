@@ -130,7 +130,7 @@ const Home = () => {
         transition={{ duration: 2 }}
       >
         <Intro>
-          Hello, I'm <span>Thales!</span> Welcome to my page.
+          Hello, I&apos;m <span>Thales!</span> Welcome to my page.
         </Intro>
         <Button>
           <Link href="/home">GET STARTED</Link>
