@@ -13,8 +13,6 @@ const WrapperDiv = styled.div`
 
 const Projects = () => {
 
-  const router = useRouter();
-
   const renderProjects = projects.map((project, index) => {
     if (project.featured) {
       return (
