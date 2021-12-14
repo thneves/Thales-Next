@@ -7,7 +7,7 @@ export const projects = [
     searchTags: ['full stack', 'react', 'redux', 'rails', 'api', 'featured'],
     live: "https://tri-tracker.herokuapp.com",
     source: "https://github.com/thneves/tri-tracker-client",
-    image: "../public/static/images/React-tri.png",
+    image: "https://raw.githubusercontent.com/thneves/tri-tracker-client/development/screenshot.png",
     featured: true,
   },
   {
@@ -18,7 +18,7 @@ export const projects = [
     searchTags: ['react', 'api', 'redux','featured'],
     live: "https://f1catalogue.netlify.app/",
     source: "https://github.com/thneves/FormulaOne-Catalogue",
-    image: "../public/static/images/React-f1.png",
+    image: "https://github.com/thneves/FormulaOne-Catalogue/raw/development/screenshot.png",
     featured: true,
   },
   {
@@ -29,7 +29,7 @@ export const projects = [
     searchTags: ['react', 'typescript', 'full stack', 'featured'],
     live: "https://let-me-ask-f210b.firebaseapp.com/",
     source: "https://github.com/thneves/Let-Me-Ask",
-    image: "../public/static/images/Ts-let.png",
+    image: "https://github.com/thneves/Let-Me-Ask/raw/development/screenshot.png",
     featured: true,
   },
   {
@@ -40,7 +40,7 @@ export const projects = [
     searchTags: ['rails', 'full stack', 'ruby', 'featured'],
     live: "https://surfriends.herokuapp.com",
     source: "https://github.com/thneves/SurFriends",
-    image: "../public/static/images/Rails-surf.png",
+    image: "https://github.com/thneves/SurFriends/raw/development/screenshot.png",
     featured: true,
   },
   {
@@ -51,7 +51,7 @@ export const projects = [
     searchTags: ['javascript', 'games', 'featured'],
     live: "https://thneves.github.io/Local-Hero/",
     source: "https://github.com/thneves/Local-Hero",
-    image: "../public/static/images/Js-local-hero.png",
+    image: "https://github.com/thneves/Local-Hero/raw/development/screenshot.png",
     featured: true,
   },
   {
@@ -62,7 +62,7 @@ export const projects = [
     searchTags: ['javascript', 'api',  'featured'],
     live: "https://thneves.github.io/City-Weather/",
     source: "https://github.com/thneves/City-Weather",
-    image: "../public/static/images/Js-city-weather.png",
+    image: "https://github.com/thneves/City-Weather/raw/development/screenshot.png",
     featured: true,
   },
   {
@@ -73,7 +73,7 @@ export const projects = [
     searchTags: ['ruby', 'api',  'featured'],
     live: "https://replit.com/@ThalesNeves/WSL-scraper#bin/main.rb",
     source: "https://github.com/thneves/WSL-scraper",
-    image: "../public/static/images/Ruby-wsl.png",
+    image: "https://github.com/thneves/WSL-scraper/raw/development/events.png",
     featured: true,
   },
   {
@@ -84,7 +84,7 @@ export const projects = [
     searchTags: ['html/css',  'featured'],
     live: "https://thneves.github.io/Capstone/",
     source: "https://github.com/thneves/Capstone",
-    image: "../public/static/images/Html-css-tsh.png",
+    image: "https://github.com/thneves/Capstone/raw/main/assets/images/screenshot.png",
     featured: true,
   },
   {
@@ -95,7 +95,7 @@ export const projects = [
     searchTags: ['javascript'],
     live: "https://alansoto31.github.io/Library/",
     source: "https://github.com/thneves/Library",
-    image: "../public/static/images/Js-library.png",
+    image: "https://github.com/thneves/Library/blob/development/screenshot.png",
     featured: false,
   },
   {
@@ -106,7 +106,7 @@ export const projects = [
     searchTags: ['javascript'],
     live: "https://thneves.github.io/To-Do-App/",
     source: "https://github.com/thneves/To-Do-App",
-    image: "../public/static/images/Js-to-do.png",
+    image: "https://github.com/thneves/To-Do-App/raw/development/screenshot.png",
     featured: false,
   },
   {
@@ -127,8 +127,8 @@ export const projects = [
     tags: ["react", "react hooks"],
     searchTags: ['react'],
     live: "unavailable", // fix deploys
-    source: "https://github.com/thneves/React-Calculator",
-    image: "../public/static/images/React-calculator.png",
+    source: "https://github.com/thneves/Bookstore/raw/development/screenshot.png",
+    image: "https://github.com/thneves/React-Calculator/raw/development/screenshot.png",
     featured: false,
   },
 ];

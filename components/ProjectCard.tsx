@@ -153,7 +153,7 @@ const ProjectsCard: React.FC<Props> = ({
   return (
     <ProjectContainer side={sideProp}>
       <ScreenShot>
-        <Image src={`${image}`} width="540" height="360" alt="project screenshot"/>
+        <Image src={image} width="540" height="360" alt="project screenshot"/>
         <div />
       </ScreenShot>
       <InfoDiv side={sideProp}>
