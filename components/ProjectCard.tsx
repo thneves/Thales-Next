@@ -3,7 +3,7 @@ import { colors } from "../constants/styledVariables";
 import { motion } from "framer-motion";
 import "remixicon/fonts/remixicon.css";
 import Image from "next/image";
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 
 const ProjectContainer = styled.div<SideProps>`
   margin: 40px auto 80px auto;
@@ -150,6 +150,7 @@ const ProjectsCard: React.FC<Props> = ({
   image,
   sideProp,
 }) => {
+
   return (
     <ProjectContainer side={sideProp}>
       <ScreenShot>
