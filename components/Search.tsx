@@ -29,7 +29,9 @@ const Tags = styled(motion.button)`
 
   &:hover {
     cursor: pointer;
-    border-top-left-radius: 50%;
+    border-top-left-radius: 45%;
+    text-shadow: 0 0 10px ${colors.primaryColor};
+    box-shadow: -2px -2px 3px 1px ${colors.primaryColor}
   }
 `;
 

@@ -117,7 +117,7 @@ export const projects = [
     searchTags: ['react', 'redux'],
     live: "https://bookstore-cms-ocean.herokuapp.com/",
     source: "https://github.com/thneves/Bookstore",
-    image: "../public/static/images/React-bookstore.png",
+    image: "https://github.com/thneves/Bookstore/raw/development/screenshot.png",
     featured: false,
   },
   {

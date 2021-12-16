@@ -4,11 +4,15 @@ import { projects } from "../constants/projects";
 import Heading from "../components/Heading";
 import ProjectsCard from "../components/ProjectCard";
 import FilterButton from "../components/FilterButton";
+import { useEffect } from "react";
+import router from "next/router";
 
 const WrapperDiv = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+
 
 const Projects = () => {
 
@@ -37,6 +41,8 @@ const Projects = () => {
         project.featured = true;
       }
     });
+
+    router.push('/projects');
   }
 
   return (
