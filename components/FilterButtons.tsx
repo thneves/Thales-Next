@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import "remixicon/fonts/remixicon.css";
 import { colors } from "../constants/styledVariables";
 import Modal from "./Modal";
-import { Example } from "./Example";
 
 const StyledDiv = styled.div`
   display: flex;
@@ -20,12 +19,20 @@ const StyledIcon = styled(motion.button)`
   border: none;
 `;
 
+const StyledIconFilter = styled(motion.button)`
+  color: ${colors.primaryColor};
+  text-align: center;
+  transition: 0.6s;
+  background: transparent;
+  border: none;
+`;
+
 
 interface IFilters {
   handleReset: (event: React.MouseEvent) => void
 }
 
-const FilterButtons: React.FC<IFilters> = ({ handleReset }) => {
+const FilterButtons = ({ handleReset }: IFilters) => {
 
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -34,18 +41,17 @@ const FilterButtons: React.FC<IFilters> = ({ handleReset }) => {
 
   return (
     <StyledDiv>
-      <StyledIcon
+      <StyledIconFilter
       
       onClick={() => ( modalOpen ? openModal() : closeModal() )}>
         <i className="ri-filter-fill ri-2x"></i>
-      </StyledIcon>
+      </StyledIconFilter>
       { modalOpen && <Modal handleClose={closeModal}/>}
       <StyledIcon
         onClick={handleReset}
       >
         <i className="ri-restart-fill ri-2x"></i>
       </StyledIcon>
-      <Example />
     </StyledDiv>
   )
 }
