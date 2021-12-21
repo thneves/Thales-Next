@@ -9,14 +9,22 @@ const StyledDiv = styled.div`
   display: flex;
   justify-content: center;
   gap: 20px;
-`
+`;
 
 const StyledIcon = styled(motion.button)`
   color: ${colors.primaryColor};
   text-align: center;
   transition: 0.6s;
   background: transparent;
+  border-radius: 100%;
   border: none;
+  transition: 0.8s;
+
+  &:hover {
+    transform: rotate(90deg);
+    cursor: pointer;
+    color: ${colors.lightText};
+  }
 `;
 
 const StyledIconFilter = styled(motion.button)`
@@ -25,8 +33,13 @@ const StyledIconFilter = styled(motion.button)`
   transition: 0.6s;
   background: transparent;
   border: none;
-`;
 
+  &:hover {
+    transform: rotate(5deg);
+    color: ${colors.lightText};
+    cursor: pointer;
+  }
+`;
 
 interface IFilters {
   handleReset: (event: React.MouseEvent) => void
