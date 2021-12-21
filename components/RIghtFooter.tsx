@@ -5,34 +5,37 @@ import { colors } from "../constants/styledVariables";
 const StyledFooter = styled(motion.div)`
   position: fixed;
   bottom: 0;
-  right: 4%;
+  right: 3%;
 `;
 
 const Rule = styled.hr`
-  height: 200px;
+  height: 220px;
   width: 2px;
   background-color: ${colors.lightText};
 `;
 
 const Email = styled.a`
-  font-size: 17px;
+  position: absolute;
+  bottom: 350px;
+  right: -118px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 2px;
   color: ${colors.lightText};
-  writing-mode: vertical-lr;
-  text-orientation: sideways;
+  transform: rotate(90deg);
   transition: 0.5s;
-
-  &:hover {
-    color: ${colors.primaryColor};
-    cursor: pointer;
-    margin-right: 8px;
-  }
-
+  
   span {
     color: ${colors.primaryColor};
     font-size: 22px;
   }
+  
+  &:hover {
+    color: ${colors.primaryColor};
+    cursor: pointer;
+    margin-bottom: 12px;
+  }
+
 `;
 
 const RightFooter = () => {

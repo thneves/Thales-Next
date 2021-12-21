@@ -59,7 +59,7 @@ const Footer = () => {
             </StyledLink>
           );
         })}
-        <Rule />
+      <Rule />
       </StyledFooter>
     </>
   );
