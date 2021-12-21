@@ -68,7 +68,7 @@ const Navbar = () => {
         </Logo>
         <Nav>
           <StyledList>
-            <Link href="/home">Home </Link>
+            <Link href="/">Home </Link>
           </StyledList>
           <StyledList>
             <Link href="/projects">Portfolio </Link>
