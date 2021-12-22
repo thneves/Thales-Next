@@ -31,7 +31,7 @@ const Intro = () => {
   const router = useRouter();
 
   useEffect(() => {
-    setTimeout(() => router.push('/home'), 4000)
+    setTimeout(() => router.push('/home'), 3300)
   }, [])
 
 
@@ -40,7 +40,7 @@ const Intro = () => {
         <StartButton
           initial={{ opacity: 1, y: 200}}
           animate={{ opacity: 0, y: -100}}
-          transition={{duration: 4 }}
+          transition={{duration: 3.3 }}
         >
           T
         </StartButton> 
