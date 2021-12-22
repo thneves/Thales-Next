@@ -1,27 +1,51 @@
+import { motion, AnimatePresence } from "framer-motion";
 import styled from "styled-components";
-import Search from "../components/Search";
-import BasicLayout from "../layout/Basic";
-import AnimatedText from "../components/AnimatedText";
+import { colors } from "../constants/styledVariables";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
-const Box = styled.div`
-  margin: 5% auto;
+const IntroDiv = styled(motion.div)`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80vh;
+  height: 100vh;
+  width: 100%;
+  background-color: ${colors.darkerColor};
+  margin: 0;
+  padding: 0;
 `;
 
-const Home = () => {
+const StartButton = styled(motion.button)`
+  border: 2px solid ${colors.primaryColor};
+  border-radius: 15px;
+  padding: 20px 40px;
+  color: ${colors.primaryColor};
+  font: 150px CostaRica, sans-serif;
+  background-color: ${colors.darkColor};
+  box-shadow: -2px -2px 8px ${colors.primaryColor};
+  text-shadow: 0 0 8px ${colors.primaryColor};
+`;
+
+const Intro = () => {
+
+  const router = useRouter();
+
+  useEffect(() => {
+    setTimeout(() => router.push('/home'), 4000)
+  }, [])
+
+
   return (
-      <BasicLayout>
-        <Box>
-          {/* <Image src={HandImg} /> */}
-          <AnimatedText />
-        </Box>
-        <Search />
-      </BasicLayout>
+    <IntroDiv>
+        <StartButton
+          initial={{ opacity: 1, y: 200}}
+          animate={{ opacity: 0, y: -100}}
+          transition={{duration: 4 }}
+        >
+          T
+        </StartButton> 
+    </IntroDiv>
   );
 };
 
-export default Home;
+export default Intro;
