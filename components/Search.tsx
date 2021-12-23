@@ -16,7 +16,7 @@ const SearchBox = styled.div`
   max-width: 540px;
 `;
 
-const Tags = styled(motion.button)`
+export const Tags = styled(motion.button)`
   width: 100px;
   padding: 8px;
   margin: 3px;
@@ -49,7 +49,7 @@ const StyledIcon2 = styled(FaSearch)`
   }
 `;
 
-const StyledDivTags = styled.div`
+export const StyledDivTags = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;

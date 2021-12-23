@@ -9,6 +9,7 @@ const StyledDiv = styled.div`
   display: flex;
   justify-content: center;
   gap: 20px;
+  z-index: 0;
 `;
 
 const StyledIcon = styled(motion.button)`
