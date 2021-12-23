@@ -47,22 +47,23 @@ interface IFilters {
 
 const FilterButtons = ({ handleReset }: IFilters) => {
 
-  const [modalOpen, setModalOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
-  const openModal = () => setModalOpen(true);
-  const closeModal = () => setModalOpen(false);
+  function openModal() {
+    setShowModal(true);
+  };
+
+  function closeModal() {
+    setShowModal(false);
+  }
 
   return (
     <StyledDiv>
-      <StyledIconFilter
-      
-      onClick={() => ( modalOpen ? openModal() : closeModal() )}>
-        <i className="ri-filter-fill ri-2x"></i>
+      <StyledIconFilter>
+        <i onClick={openModal}className="ri-filter-fill ri-2x"></i>
       </StyledIconFilter>
-      { modalOpen && <Modal handleClose={closeModal}/>}
-      <StyledIcon
-        onClick={handleReset}
-      >
+      <Modal showModal={showModal} closeModal={closeModal}/>
+      <StyledIcon onClick={handleReset}>
         <i className="ri-restart-fill ri-2x"></i>
       </StyledIcon>
     </StyledDiv>

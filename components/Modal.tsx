@@ -1,56 +1,56 @@
+import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
 import styled from "styled-components";
-import { motion} from "framer-motion";
-import Backdrop from "./Backdrop";
+import { motion } from "framer-motion";
 import { colors } from "../constants/styledVariables";
-import { ReactNode } from "react";
 
-const dropIn = {
-  hidden: {
-    y: "-100vh",
-    opacity: 0,
-  },
-  visible: {
-    y: "0",
-    opacity: 1,
-    transition: {
-      duration: 0.1,
-      type: "spring",
-      damping: 25,
-      stiffness: 500,
-    }
-  },
+const ModalBox = styled(motion.div)`
+  position: relative;
+  z-index: 2;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${colors.darkColor};
+`;
 
-  exit: {
-    y: "100vh",
-    opacity: 0,
-  },
-}
+const ModalContent = styled(motion.div)`
+  padding: 5px;
+`;
 
-const StyledDiv = styled(motion.div)`
-  background: ${colors.primaryColor};
-`
+const ToggleBtn = styled(motion.button)`
+  cursor: pointer;
+  font-size: 20px;
+  color: #fff;
+  padding: 0.5rem 0.8rem;
+  margin-top: 3rem;
+  background: #3bb75e;
+  text-decoration: none;
+  border: none;
+  border-radius: 50px;
+`;
 
-interface IModal {
-  handleClose: React.MouseEventHandler;
-}
-
-const Modal: React.FC<IModal> = ({ handleClose }) => {
+const Modal = ({ showModal, closeModal }: any) => {
   return (
-    <Backdrop onClick={handleClose}>
-      <StyledDiv
-        onClick={(e) => e.stopPropagation()}
-        variants={dropIn}
-        initial="hidden"
-        animate="visible"
-        exit="exit"
-      >
-        <div>
-          oi oi oi oi 
-        </div>
-
-      </StyledDiv>
-
-    </Backdrop>
+    <AnimatePresence>
+        {showModal && (
+          <ModalBox
+            initial={{opacity:0, y: 60, scale: 0.5}}
+            animate={{ opacity:1, y: 0, scale: 1}}
+            transition={{ type:"sprng", stiffness: 300}}
+            exit={{ opacity: 0, scale: 0.5, transition: { duration: 0.6 }}}
+          >
+            <ModalContent
+              initial={{ y: -30, opacity: 0 }}
+              animate={{ y: 0, opacity: 1, transition: { delay: 0.5 }}}
+            >
+              <p>Olá amigus</p>
+            </ModalContent>
+            <ToggleBtn onClick={closeModal}>Close Modal</ToggleBtn>
+          </ModalBox>
+        )}
+      </AnimatePresence>
   )
 }
 
