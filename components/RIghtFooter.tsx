@@ -2,32 +2,39 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { colors } from "../constants/styledVariables";
 
-const StyledFooter = styled(motion.div)`
+const RightSide = styled(motion.div)`
+  width: 40px;
   position: fixed;
   bottom: 0;
-  right: 3%;
-`;
+  left: auto;
+  right: 40px;
+  z-index: 10;
 
-const Rule = styled.hr`
-  height: 220px;
-  width: 2px;
-  background-color: ${colors.lightText};
+`
+
+const StyledFooter = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 `;
 
 const Email = styled.a`
-  position: absolute;
-  bottom: 350px;
-  right: -118px;
+  margin: 20px auto;
+  padding: 10px;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 2px;
+  writing-mode: vertical-rl;
   color: ${colors.lightText};
-  transform: rotate(90deg);
   transition: 0.5s;
+  position: relative;
   
   span {
     color: ${colors.primaryColor};
     font-size: 22px;
+    position: relative;
   }
   
   &:hover {
@@ -40,18 +47,17 @@ const Email = styled.a`
 
 const RightFooter = () => {
   return (
-    <>
-      <StyledFooter
-        initial={{ y: -100, opacity: 0.2 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8 }}
-      >
+    <RightSide
+      initial={{ y: -100, opacity: 0.2 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8 }}
+    >
+      <StyledFooter>
         <Email href="mailto:tsneves11@gmail.com">
           tsneves11<span>@</span>gmail.com
         </Email>
-        <Rule />
       </StyledFooter>
-    </>
+    </RightSide>
   );
 };
 

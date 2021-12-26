@@ -23,12 +23,6 @@ const StyledLink = styled.a`
   }
 `;
 
-const Rule = styled.hr`
-  height: 300px;
-  width: 2px;
-  background-color: ${colors.lightText};
-`;
-
 const Footer = () => {
   const links = [
     {
@@ -59,7 +53,6 @@ const Footer = () => {
             </StyledLink>
           );
         })}
-      <Rule />
       </StyledFooter>
     </>
   );
