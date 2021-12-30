@@ -2,11 +2,16 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { RiGithubLine, RiBracesFill, RiLinkedinLine } from "react-icons/ri";
 import { colors } from "../constants/styledVariables";
+import Rule from "./Rule";
 
 const StyledFooter = styled(motion.div)`
   position: fixed;
   bottom: 0;
   left: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 const StyledLink = styled.a`
@@ -40,7 +45,6 @@ const Footer = () => {
   ];
 
   return (
-    <>
       <StyledFooter
         initial={{ y: 100, opacity: 0.2 }}
         animate={{ y: 0, opacity: 1 }}
@@ -53,8 +57,8 @@ const Footer = () => {
             </StyledLink>
           );
         })}
+        <Rule />
       </StyledFooter>
-    </>
   );
 };
 
