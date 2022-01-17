@@ -37,7 +37,7 @@ export const projects = [
     description:
       "Social media web app based on twitter. Users can follow other users, create posts, and more.",
     tags: ["rails", "rspec", "cloudinary", "tdd", "heroku"],
-    searchTags: ['rails', 'full stack', 'ruby', 'featured'],
+    searchTags: ['rails', 'full stack', 'featured'],
     live: "https://surfriends.herokuapp.com",
     source: "https://github.com/thneves/SurFriends",
     image: "https://github.com/thneves/SurFriends/raw/development/screenshot.png",
@@ -129,6 +129,28 @@ export const projects = [
     live: "unavailable", // fix deploys
     source: "https://github.com/thneves/Bookstore/raw/development/screenshot.png",
     image: "https://github.com/thneves/React-Calculator/raw/development/screenshot.png",
+    featured: false,
+  },
+  {
+    title: "Toy Robot CLI",
+    description:
+      "This application consists in a simulation of a toy robot moving on a square tabletop, of dimensions 5x5 using the CLI.",
+    tags: ["ruby", "rspec"],
+    searchTags: ['ruby'],
+    live: "uhttps://replit.com/@ThalesNeves/toy-robot-CLI#.replit",
+    source: "https://github.com/thneves/toy-robot-CLI",
+    image: "https://github.com/thneves/toy-robot-CLI/blob/development/toyrobot.png?raw=true",
+    featured: false,
+  },
+  {
+    title: "Toy Robot Web",
+    description:
+      "This web application consists in a simulation of a toy robot moving on a square tabletop, of dimensions 5x5.",
+    tags: ["react", "rails"],
+    searchTags: ['rails'],
+    live: "https://the-toy-robot.herokuapp.com/", 
+    source: "https://github.com/thneves/toy-robot",
+    image: "https://github.com/thneves/toy-robot/raw/development2/robot.png",
     featured: false,
   },
 ];
