@@ -1,33 +1,33 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { colors } from "../constants/styledVariables";
+import Rule from "./Rule";
+
 
 const StyledFooter = styled(motion.div)`
-  position: fixed;
+position: fixed;
   bottom: 0;
-  right: 3%;
-`;
-
-const Rule = styled.hr`
-  height: 220px;
-  width: 2px;
-  background-color: ${colors.lightText};
+  right: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Email = styled.a`
-  position: absolute;
-  bottom: 350px;
-  right: -118px;
   font-size: 15px;
   font-weight: 700;
+  margin-bottom: 20px;
   letter-spacing: 2px;
+  writing-mode: vertical-rl;
   color: ${colors.lightText};
-  transform: rotate(90deg);
   transition: 0.5s;
+  position: relative;
   
   span {
     color: ${colors.primaryColor};
     font-size: 22px;
+    position: relative;
   }
   
   &:hover {
@@ -40,7 +40,7 @@ const Email = styled.a`
 
 const RightFooter = () => {
   return (
-    <>
+
       <StyledFooter
         initial={{ y: -100, opacity: 0.2 }}
         animate={{ y: 0, opacity: 1 }}
@@ -51,7 +51,6 @@ const RightFooter = () => {
         </Email>
         <Rule />
       </StyledFooter>
-    </>
   );
 };
 

@@ -11,7 +11,7 @@ const ModalBox = styled(motion.div)`
   position: relative;
   z-index: 2;
   width: 400px;
-  margin: 0 30px;
+  margin: 0 30px 30px 30px;
   padding: 30px 0;
   display: flex;
   flex-direction: column;
